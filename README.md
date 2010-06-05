@@ -14,3 +14,10 @@ Table of Contents
 - Collaborative Computing
 - Collaborative Projects in Cheminformatics
 - Conclusion
+
+How to Suggest Content?
+-----------------------
+
+Tag the paper with collabcheminf on CiteULike:
+
+http://www.citeulike.org/tag/collabcheminf
