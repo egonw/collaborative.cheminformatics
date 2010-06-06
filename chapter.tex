@@ -77,7 +77,34 @@ collaborative computing in more detail.
 
 \subsection{Shared Computing Services}
 
-Sharing computing with web services ... SOAP, REST, XMPP~\cite{Wagener2009}.
+Distributed computing has gone through many phases starting with
+Remote Procedure Calls (RPC) in the 1970a and 1980s to CORBA in the
+1990s. More recently, distributed computing in the form of web
+services have become a mechanism by which different groups expose both
+methods (analogous to remote function calls that are the hallmark of
+RPC and CORBA) as well as data. In this sense, we consider web
+services to be a generalization, allowing one to provide access both
+data (such as databases) and algorithms.
+
+There are many protocols by which web services such as SOAP and
+XMPP~\cite{Wagener2009}. Most web service protocols are designed to
+work with multiple types of transport layers (HTTP, UDP, etc) but the
+majority of web service protocols currently in use work over
+HTTP. This approach results in significant;y easier deploy of services
+and access to them, since HTTP is ubiquitous throughout the
+Internet. For a more detailed review of web service technologies the
+reader is referred to XXX and YYY.
+
+In this section we provide a brief overview of cheminformatics web
+services and some use cases highlighting the collaborative potential
+of such web services.
+
+Indiana University has developed a number of cheminformatics web
+services [REF] that provide access to core cheminformatics methods
+(fingerprints, 2D depiction and various molecular descriptors),
+statistical techniques (using R [REF] as the backend) and chemical
+database access methods.
+
 
 \subsection{Sharing Computation Specifications}
 
