@@ -110,9 +110,79 @@ found in Dong et al~\cite{Dong2007Web}. The services have been used in
 a variety of scenarios. For example, the fingerprint and statistical
 model services were employed by Indiana University to develop
 models to predict the activity of user supplied compounds against the
-NCI60 cancer cell lines.
+NCI60 cancer cell lines. Interestingly, the final predictive model was
+itself, converted to a web service and thus accessible by any SOAP client,
+remote or local. Note that while the model service was also located at
+Indiana University, it could easily make use of fingerprint services
+located at other sites, anywhere across the world.
 
+Recently, these web services have been forked and reimplemented as
+REST based services. While SOAP services can be ``hidden'' behind a
+REST interface, the reimplementation avoids the extra complexity
+imposed by SOAP, by directly exposing the functionality via the REST
+interface. These services can be found at
+\href{http://rguha.net/rest}{http://rguha.net/rest}. Curently, the
+services are hosted at multiple locations include Drexel University,
+USA and Uppsala University, Sweden and are utilized by a number of
+independent applications. An example is the use of these services to
+enhance an Open Notebook Science (ONS) project. The ONS Solubility
+Challenge is an ongoing project in which a number of research groups
+have experimentally determined the solubility of a variety of solutes
+in a variety of solvents. All the data generated as part of this
+project is publicaly hosted on a GoogleDocs spreadsheet and outsiders
+are encouraged to explore and mine the data, with the hope that their
+results will be also be made Open. At the time of writing the project
+has seen contributions from a number of people, including chemists,
+mathematicians and programmers. As the project has grown, the number
+of measurements now numbers in the hundreds. The spreadsheet contains
+alphanumeric identifiers for solutes and solvents along with SMILES
+representations and solubility data. In a number of cases, external
+references are also included. While the use of Google Spreadsheets is
+a very simple way to share data, the nature of the data makes it
+unweildy to explore. In general, while numeric solubility data is
+useful it is more appropriate to explore it from a chemical point of
+view - that is, in terms of structures and substructures.
 
+As a result, a simple web page interface
+(\href{http://toposome.chemistry.drexel.edu/~rguha/jcsol/sol.html}{http://toposome.chemistry.drexel.edu/~rguha/jcsol/sol.html})
+was developed that extract data from the Google spreadsheet via the
+Google-provided Data API and presented the data or filtered subsets of
+the data (based on solute or solvent identifiers, substructures or
+solubility ranges). The key feature of this application is the
+incorporation of chemical intelligence, by making use of
+cheminformatics web services hosted at Uppsala University. By making
+use of these services, the SMILES strings stored in the spreadsheet
+could be filtered by the presence or absence of substructures
+(specified via SMARTS). In addition, the services were also employed
+to provide 2D structure depictions of the results matching satisfying
+the query. From a colaborative point of view, this application is
+interesting as the developer had no role in the gathering of the
+solubility data and did not create the online spreadsheet. Instead,
+the application made use of public data API's provided by Google and
+public web services hosted at another, remote location to extract and
+present data that satisfied the requirements of another, external
+group (i.e., the experimentalists making the measurements).
+
+A related application (XXX) was developed by another researcher to
+explore the chemical space (via descriptor calculations followed by
+principal components analysis). This application also made use of the
+cheminformatics services hosted at Drexel University as well as
+visualization services provided by Google, allowing users to generate
+principal component plots of the solubility data, thereby
+understanding the extent of the chemical space occupied by the current
+set of chemical.
+
+These applications highlight the fact that distributed software
+resources were key in allowing multiple, unrelated parties to
+collaborate on a publically available dataset. While this type of
+collaboration could certainly be achieved using traditional software
+resources (i.e., locally installed libraries and programs), the
+presence of freely accessible web services (for both cheminformatics
+as well as data and visualization) allows \emph{arbitrary} individuals
+or groups to develop novel applications that were not considered by
+the original researchers. Furthermore, the free and distributed nature
+of the resources allows such developers free themselves of software
+installation and management and onerous licensing conditions.
 
 
 \subsection{Sharing Computation Specifications}
@@ -125,7 +195,7 @@ Taverna~\cite{Oinn2004} ... CDK-Taverna~\cite{Kuhn2010} ...
 
 Bioclipse~\cite{Spjuth2009,Spjuth2007}...
 
-\section{Collaborative Projects in Cheminformatics}
+\section{Managing Collaborative Projects in Cheminformatics}
 
 Facilitating communication ... mailing lists, blogs, ...
 
