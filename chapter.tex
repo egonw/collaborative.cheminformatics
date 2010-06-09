@@ -50,7 +50,33 @@ plays the linking of various databases, which allows integration of them.
 
 Resource Description Framework ... HCLS, Bio2RDF, Chem2Bio2RDF, ...
 
-Userscripts ...
+Userscripts present an approach to linking resources with a very low
+barrier to entry. The idea of a Userscript was first made available by
+the Greasemonkey Mozilla extension and later by Ubiquity Mozilla
+extension. A userscript was simply a small Javascript program that
+runs on the client browser and can modify a given web page before it
+is displayed to the viewer. In other words, given permission to do so,
+a userscript can completely rewrite a webpage in any way it sees
+fit. This opens up exciting possibilities in annotating web content
+and linking web content to arbitrary data sources. A variety of
+userscripts for cheminformatics have been described by Willighgen et
+al~\cite{XXX}. For example, when viewing a web page describing
+chemistry, a userscript can be written to take the text and run it
+through a chemical entity recognition tool (such as OSCAR [REF]) and
+then highight terms that were recognized. Such a script can be further
+enhanced by not only highlighting recognized terms, but inserting
+hyperlinks to chemical databases such as Pubchem or
+Chemspider. Another application described by Willighagen et al, was to
+display 3D structures of molecules when browsing Pubchem web pages. In
+the past, Pubchem did not provide 3D structure information. On the
+other hand, Indiana University had generated a single low energy
+conformer for 99\% of Pubchem and stored them in a database. A
+usercript was implemented that when run on a Pubchem compound page,
+would identify the compound ID and retrieve the corresponding 3D
+structure (if available) from the Indiana University database and then
+display it in a Jmol window. Key to the functionality of many
+cheminformatics userscripts is the use of freely accessible
+cheminformatics web services (Section \ref{ref:ws}) and databases.
 
 \section{Collaborative Computing}
 
@@ -76,7 +102,7 @@ registries. The following subsections discuss these facets of
 collaborative computing in more detail.
 
 \subsection{Shared Computing Services}
-
+\label{ref:ws}
 Distributed computing has gone through many phases starting with
 Remote Procedure Calls (RPC) in the 1970a and 1980s to CORBA in the
 1990s. More recently, distributed computing in the form of web
@@ -223,9 +249,116 @@ Bioclipse~\cite{Spjuth2009,Spjuth2007}...
 
 \section{Managing Collaborative Projects in Cheminformatics}
 
-Facilitating communication ... mailing lists, blogs, ...
+We have provided a brief overview of various technologies that enable
+and enhance collaborative projects in the field of
+cheminformatics. Yet, one aspect still remains. While tools are
+available to share source code and experimental data, how are such
+collaborative projects managed? When the collaboration is between two
+individuals, project management is not a significant problem. It
+becomes much more problematic when the number of collaborators grows
+larger.
 
-Collaborative documenting ... Google Docs, Google Wave~\cite{Neylon2009}, ...
+The first aspect is communication between members of the
+collaboration. A number of mechanisms are available including mailing
+lists and online messaging systems. Both these methods have a long
+history and mailing lists are a useful way to broadcast messages to
+all members of a group. This has its downside as well, as many members
+may not desire such broadcasted messages. Furthermore, email is
+relatively inefficient at handling multiple conversations, though
+threading [REF] does alleviate this. Modern email systems such as
+Google Mail have provided a number of enhancements to improve the
+handling of multiple conversations in a mailing list. 
+
+One important aspect of mailing lists is that they are not real time
+or interactive. On the other hand, messaging systems such as Internet
+Relay Chat (IRC) or instant messengers (Yahoo Chat, AOL, etc.) offer
+real time interactivity between participants. These systems allow for
+direct interactions between multiple members and are extremely useful
+for on-the-fly problem solving and discussions. Of course, since these
+technologies are text based, it can be slower than phone or video
+conferencing. But on the otherhand, these systems are very light on
+resources and efficient on slow Internet connections.
+
+More recently, weblogs or blogs, have become a useful mode of
+communication. This approach allows a degree of interactivity between
+the producer of the blog and readers, but is primarily a vehicle for
+an individual or group to provide updates. Of course, by allowing
+multiple people to post on the blog, it can be a useful way for a
+collaborative group to provide updates and information on the
+project. Blogs are also useful from the consumers point of view since
+they are a \emph{pull} technology. That is, the consumer (i.e.,
+reader) will usually read the blog via an RSS reader and thus rather
+than receive updates from the blog, will read new posts when desired.
+
+The technologies discussed so far have focused on communication
+between members of a collaboration and other interested parties. But
+another vital aspect of colaborative projects is the development of
+documentation - ranging from API documentation to tutorials and policy
+documents. While one could exchange documents via email, one very
+quickly runs into the problem of keeping everybody's edits
+synchronized. Collaborative document editing systems have recently
+been developed that directly address this problem. One example is
+Google Docs, which is an online resource that allows one to create
+documents, spreadsheets and presentations and then share them between
+other users. Each authorized user can edit the document and more
+importantly, multiple users can simultaneously work on these
+documents. The service automatially tracks the edits by each users and
+provides an intuitive view of the document history, allowing one to
+view the edits made by each user. The documents can be exported to a
+variety of common formats, allowing one to introduce such documents
+into the traditional workflow.
+
+Google Docs is a useful solution to the problem of collaborative
+editing of traditional documents. Wikis provide another approach, that
+is more free-form. The fundamental idea of a wiki is that it is a
+colection of pages, linked via hyperlinks and that authorized users
+can edit, add to or delete these pages arbitrarily. Most wikis will
+also keep a history of the edits made to each page, allowing one to
+track who did what. In contrast to something like Google Docs, wikis
+are much more free form (indeed, they are fundamentally just web
+pages). In addition, it is posible to add arbitrary files to a wiki,
+which allows one to record and track the entire state of a project
+over time (cf. the Open Notebook Science Solubility Challenge on
+Wikispaces [URL]). While wikis ae useful they are not necessarily the
+best solution for all cases. For example, in software development
+projects, keeping an associated wiki up to date with the state of the
+project can be tedious, especially if the development is very
+rapid. While the wiki might be useful for material such as tutorials
+and so on, it is rarely a good solution for API documentation. Many
+would argue that even usage information should be a part of the API
+documentation and should be written inline with the code. Such inline
+documentation can easily be extracted and formatted using tools such
+as Doxygen or Sphinx and \emph{linked to} from the wiki. This last
+point highlights one advantage of a wiki type of system - it is a very
+easy way to aggregate resources via linking rather than include them
+directly in the wiki itself. This leads to significantly lower efforts
+in maintaining the wiki.
+
+In addition to these systems, tools that have traditionally been
+focused on software development can be usefully applied to other
+scenarios. A good example is the use of a bug tracking systems to keep
+track of feature requests or new ideas. These systems allow one to
+keep a list of these issues and possibly assign them to one or more
+people for followup.
+
+It should be noted that the software systems to support the ideas
+described here can be obtained in a variety of forms. Each component
+described here can be obtained individually, require the collaboration
+to set them up whereas more comprehensive solutions also exist that
+couple wiki's, feature tracking systems and collaborative editing
+systems in a single package. In addition, one has a choice of Open
+Source or commercial solutions to choose from.
+
+We have dicussed a variety of technologies that facilitate
+collaborative project management. But a vital component of this is the
+managment of people within such projects. There are many approaches to
+this ranging from committees to dictatorships (benevolent or
+otherwise). In this chapter we do not discuss the merits or demerits
+of any given approach, save to say that efficient personnel management
+is vital to the successful completion of a collaborative project.
+
+\textbf{Still don't understand Google Wave :) Can you add some stuff?}
+Google Wave~\cite{Neylon2009}, ...
 
 \section{Conclusion}
 
