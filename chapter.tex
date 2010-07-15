@@ -13,13 +13,65 @@
 
 \section{Collaborative Cheminformatics Code Development}
 
-JChemPaint was an early project promoting collaborative development over the
-internet, going back to 1998~\cite{Krause2000}.
+Collaborative code development is a common approach for large software vendors.
+For scientific software, however, it is more uncommon: new software is typically
+started as a PhD or M.Sc. project, with a single developer. There are, though,
+two areas where collaborative code development in cheminformatics flourishes:
+one situation is where a piece of software has become large and successful,
+and multiple people have interest in contributing to the project; the second
+situation is where the project is fairly small, and no single developer can
+or wants to lead the project, as the topic is not core business.
 
-The Blue Obelisk movement was founded in 2005 to jointly promote Open Data,
-Open Source, and Open Standards... \cite{Guha2006}.
+An example of the latter situation is the JChemPaint project. There are existing
+similar projects, making continued development out of scope of cheminformatics
+research. However, Steinbeck et al. showing in 1998 that a collaborative project
+can lead to an eco system where such software can still be
+developed~\cite{Krause2000}.
 
-Source code repositories: SourceForge, GitHub, ...
+Central to collaborative code development is sharing source code. Particularly,
+it is pipelining how patches are shared and applied. While some cheminformatics
+projects still share source code as source distributions, the adoption of
+source code repositories as the golden standard. There are various 
+open source repository technologies around, including Concurrent Versions System (CVS),
+Subversion (SVN), Mercurial, Bazaar, and Git. CVS is the oldest and mostly replaced
+by the newer technologies. Subversion is still abundant, but increasingly
+replaced by the last three technologies. The reason for this is that
+those three are distributed technologies, allowing server redundancy.
+
+Moreover, because of the distributed nature of Mercurial, Bazaar, and Git,
+branching and merges of branches is often easier. However, the increased
+functionality also introduces further complexity, which is particularly
+the case for Git, causing an increased learning curve.
+
+As these tools are Open Source, anyone is able to set up a local server, but
+Open Source projects can take advantage of service providers that host
+free and public code repositories. Table~\ref{tab:cvsProviders}
+provides an overview of various larger service providers, but there
+are many alternatives.
+
+\begin{table}
+\caption{Overview of code sharing technologies and service providers
+that provide free hosting:
+GitHub: \url{https://github.com/},
+Gitorious: \url{https://gitorious.org/},
+Google Code: \url{http://code.google.com/},
+LaunchPad: \url{https://launchpad.net/},
+SourceForge: \url{https://sf.net/}.
+}
+\label{tab:cvsProviders}
+\begin{tabular}{|c|c|}
+\hline Technology & Provider(s) \\ 
+\hline Concurrent Versions System &  SourceForge \\ 
+\hline Subversion & SourceForge, Google Code \\ 
+\hline Mercurial & Google Code \\ 
+\hline Bazaar & LaunchPad \\ 
+\hline Git & GitHub, Gitorious, SourceForge \\ 
+\end{tabular} 
+\end{table}
+
+\subsection{Licensing}
+
+
 
 \subsection{Peer review}
 
