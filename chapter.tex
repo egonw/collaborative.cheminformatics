@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{times}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -59,14 +60,17 @@ LaunchPad: \url{https://launchpad.net/},
 SourceForge: \url{https://sf.net/}.
 }
 \label{tab:cvsProviders}
-\begin{tabular}{|c|c|}
-\hline Technology & Provider(s) \\ 
+\vspace{0.1cm}
+\begin{center}
+\begin{tabular}{c|c}
+\textbf{Technology} & \textbf{Provider(s)} \\ 
 \hline Concurrent Versions System &  SourceForge \\ 
 \hline Subversion & SourceForge, Google Code \\ 
 \hline Mercurial & Google Code \\ 
 \hline Bazaar & LaunchPad \\ 
 \hline Git & GitHub, Gitorious, SourceForge \\ 
 \end{tabular} 
+\end{center}
 \end{table}
 
 \subsection{Licensing}
@@ -88,9 +92,52 @@ Source licenses is available from the Open Source Initiative:
 
 \subsection{Peer review}
 
-GitHub provides functionality to peer review commits ...
+Another aspect of collaborative development is that one can
+take advantage of peer review. While the role of peer review
+in scientific publishing is well recognized, it is hardly
+applied to scientific programming. Nevertheless, the
+advantages are clearly recognized, such as written up
+in the famous writing \textit{The Cathedral and the Bazaar}~\cite{Raymond2001}:
 
-% TODO: copy/paste screenshot from Egon's blog
+\begin{quotation}
+It's one thing to observe in the large that the bazaar style
+greatly accelerates debugging and code evolution. It's
+another to understand exactly how and why it does so at the
+micro-level of day-to-day developer and tester behavior.
+\end{quotation}
+
+The section then details on why the Bazaar model, with many
+people looking at the code actually works. Now, interestingly,
+this is where it may not apply to cheminformatics, where
+the number of potential people looking at the code is
+relatively low. Moreover, developers from competing projects
+may have additional reasons not to review work from other
+projects, further reducing the number of reviewers.
+
+It should be noted that this problem is general to science,
+and that peer review of publications too typically requires
+a more formal approach. Code development has the advantage
+that static source code checkers are available that can
+detect common problems, such as PMD (\url{http://pmd.sf.net/}).
+These tools check, for example, for unused variables, dead
+code, etc, often highlighting sources of problems.
+
+Manual peer code review is increasingly simplified by new
+tools. For example, GitHub provides the functionality to
+comment on changes~\cite{Chemblaics201005CodeReview},
+increasing the communication between developers and the
+social pressure to write better source code.
+Figure~\ref{fig:githubCodereview} show an example comment
+made via the GitHub website.
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{graphics/codeReview8.png}
+\caption{Screenshot of the GitHub webpage providing code
+review functionality. The comments shows a reviewer question
+regarding a parameter description missing in the JavaDoc
+(see \url{http://github.com/egonw/bioclipse.cheminformatics/commit/3ce78ba}).}
+\label{fig:githubCodereview}
+\end{figure}
 
 \section{Collaborative Cheminformatics Knowledge Base Building}
 
