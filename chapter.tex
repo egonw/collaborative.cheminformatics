@@ -1,23 +1,43 @@
 \documentclass[12pt]{book}
 \usepackage[utf8]{inputenc}
-\usepackage{a4wide}
+%\usepackage{a4wide}
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{times}
 \usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{ctable}
 
 \begin{document}
 
 \chapter{Collaborative Cheminformatics Applications}
 
-\section{Background}
+Cheminformatics is the science of chemical data and computation.
+The origin of the data is the wet lab, making collaboration an
+intrinsic part of cheminformatics. However, as the field matured
+it become more specialized, and with more specialization the
+nature of those collaborations changed: collaboration could
+have started as a lab scientist doing cheminformatics on the
+side, after which it evolved to people specializing in
+cheminformatics while collaborating with other scientists
+in the same group, and later in other groups. Nowadays,
+it is no longer uncommon to collaborate with scientists around
+the world, as even the same university may no longer share
+the same specialism. This is the era of online science.
+
+Fortunately, cheminformatics is at an advantage compared to
+other sciences, as the data exchange, processing, and analysis
+is all done electronically anyway, making it suitable to be
+scaled up to science online. This chapter will detail the
+various tools cheminformaticians have at hand to simplify
+this online collaboration.
 
 Cheminformatics deals with the aggregation, handling, processing, and
 analysis of chemical data. The nature of the chemical data is in principle
 not important, but the history of the field and its separation from
 quantum chemistry fields, bias the field towards small organic molecules.
 The patterns in collaborative applications are, however, independent from
-the exact nature of the data. Instead, we will focus in this chapter
+the exact nature of the data. Therefore, we will focus in this chapter
 on another dimension to discuss the aspects of collaborative
 cheminformatics applications: code development, knowledge handling
 and data exchange, and collaborative computation.
