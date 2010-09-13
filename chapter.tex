@@ -178,15 +178,7 @@ regarding a parameter description missing in the JavaDoc
 \label{fig:githubCodereview}
 \end{figure}
 
-\section{Collaborative Knowledge Bases}
-
-Open Data ...
-
-The Blue Obelisk Data Repository is a collaborative project by a number
-of cheminformatics tools, including Kalzium (of the KDE desktop), the
-Chemistry Development Kit, ...
-
-\begin{figure}
+\begin{figure}[bt]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphics/kalzium.png}
 \end{center}
@@ -196,13 +188,59 @@ isotopes of cobalt using the Blue Obelisk Data Repository.}
 \label{fig:kalzium}
 \end{figure}
 
+\section{Collaborative Knowledge Bases}
+
+Cheminformatics is, of course, very much about information. This
+information is embedded in knowledge bases, such as relational databases.
+The knowledge in these information resources is derived from experimental
+data. For example, force fields, which are used to calculate energies
+for molecular conformations, are based on common patters, such as
+average bond lengths, angles between two bonds that have one
+atom in common, etc.
+
+The collaborative building of knowledge bases is now well-established,
+with popular examples in chemistry including compound databases
+like PubChem and ChemSpider where people can deposit chemical
+structures.
 Social sites to share Open Data include the
 NMRShiftDB~\cite{Steinbeck2004} (GNU FDL license),
-ChemPedia (\url{http://chempedia.org/substances}, CC0 license)...
+ChemPedia (\url{http://chempedia.org/substances}, CC0 license),
+and the Blue Obelisk Data Repository is a collaborative project by a number
+of cheminformatics tools~\cite{Guha2006}, including Kalzium (see Figure~\ref{fig:kalzium}),
+the Chemistry Development Kit, and others.
+However, it should be noted that these collaborative, Open Data
+resources are small in size, and that the collaborating community
+is not (yet) of critical mass.
 
-% TODO: perhaps move these resources into a table
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/wikichemistry}
+\end{center}
+\caption{Homepage of the WikiProject Chemistry, organizing the
+editing of chemical articles on Wikipedia.}
+\label{fig:wikichem}
+\end{figure}
+
+Wikipedia, instead, has an active development communitity and
+collaboration within the WikiProject Chemistry
+(\url{http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Chemistry}).
+This project has many contributors and keeps track of the chemistry
+related pages in Wikipedia and has frequent discussions on how
+to improve the chemistry on these pages. Collaboration is organized
+via a project wiki page that can be edited by all contributors
+(see Figure~\ref{fig:wikichem}).
+
+The toxicology community, at the same time, is also bootstrapping
+a community effort to share knowledge around the OpenTox Open Standard~\cite{Hardy2010}.
+OpenTox provides an interoperable standard for the support of predictive toxicology,
+including data management, and the specification of algorithms, modelling, validation and
+reporting. OpenTox takes advantage of other Open Standards for data representation,
+interfaces, vocabularies and ontologies: functionality is provided as REST services,
+and replies are provided in various formats, including Resource Description Framework,
+the underlying technology of the Semantic Web.
 
 \subsection{Data standardization and interoperability}
+
 Sharing of information and data requires well developed standards and exchange formats. An example in cheminformatics is the extensible Chemical Markup Language (CML) which is an approach to manage primarily molecular data, which has been extended to also comprise other entities, including reactions and spectra. Another example is HUPO-PSI Molecular Interaction format for the representation of molecular interaction data~\cite{Orchard:2010uq}. The advantage of standardized file formats is that applications can share information without loss of data, and it is becoming increasingly common that data must be deposited in public repositories in an open exchange formats prior to publication in scientific journals.
 
 Ontologies are formal representations that are used to define concepts and their relationships in a specific domain. For example, the [Egon: suggestion of a relevant ontology?] Ontology has produced a controlled vocabulary that unifies the representation of [Egon: suggestions?]. By selecting a concept from an ontology it is clear what the meaning is, eliminating uncertainty of spelling and allowing for joining data in a coherent fashion.
