@@ -251,14 +251,34 @@ applications can share information without loss of data, and it is becoming
 increasingly common that data must be deposited in public repositories in an
 open exchange formats prior to publication in scientific journals.
 
-Ontologies are formal representations that are used to define concepts and their
-relationships in a specific domain. For example, the [Egon: suggestion of a relevant
-ontology?] Ontology has produced a controlled vocabulary that unifies the representation
-of [Egon: suggestions?]. By selecting a concept from an ontology it is clear what the
-meaning is, eliminating uncertainty of spelling and allowing for joining data in a
-coherent fashion.
+The cheminformatics community is slowly moving towards a more classical
+standardization of knowledge: the use of ontologies. Ontologies are a formal
+representations that are used to define concepts and their relationships in a
+specific domain. By explicitly defining what a term means, it defines how
+it should be used. Likewise, knowledge expressed with terms defined in
+ontologies is more precise as anyone can look up what the exact meaning is.
 
-The open exchange format QSAR-ML~\cite{Spjuth:2010fk} aims at representing datasets
+There are various levels of detail an ontology can have, and in its most
+simple form, the ontology is a controlled vocabulary, such as the IUPAC
+Gold Book (\url{http://goldbook.iupac.org/}), which specifies chemical terminology.
+More detailed ontologies, as those used by the knowledge management community,
+define terms in much more detail, identifying classes, hierarchy of classes
+(for example used by the Gene Ontology~\cite{GO2008,GO2010}), and relations
+between classes. For example, a chemical ontology can specify what a \textit{molecule}
+is, and that it is subclass of \textit{chemical entities}, and that a molecule can have
+a \textit{boiling point}, and that a boiling point is a \textit{physical property of a chemical
+entity}. These are the kind facts expressed in domain ontologies.
+Ontologies have been used in chemistry since at least the 80-ties~\cite{Gordon1983},
+but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar2010}, possible triggered by the
+open eXtensible Markup Language (XML) and and Web Ontology Language (OWL)
+standards.
+
+Ongoing community efforts to define ontologies related to cheminformatics include
+the OpenTox API mentioned earlier, the Blue Obelisk Descriptor Ontology, and the
+Chemical Information Ontology, a cheminformatics-oriented ontology
+(\url{http://code.google.com/p/semanticchemistry/}). Another ontology
+recently introduced to simplify building knowledge bases, is
+the open exchange format QSAR-ML~\cite{Spjuth:2010fk} which aims at representing datasets
 for Quantitative Structure-Activity Relationships (QSAR) in an open and completely
 reproducible way. In QSAR, chemical structures are described by numerical vectors
 (descriptors), and QSAR-ML makes use of the Blue Obelisk Descriptor Ontology for
