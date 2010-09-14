@@ -434,6 +434,7 @@ collaborative computing in more detail.
 
 \subsection{Shared Computing Services}
 \label{ref:ws}
+
 Distributed computing has gone through many phases starting with
 Remote Procedure Calls (RPC) in the 1970a and 1980s to CORBA in the
 1990s. More recently, distributed computing in the form of web
@@ -443,11 +444,11 @@ RPC and CORBA) as well as data. In this sense, we consider web
 services to be a generalization, allowing one to provide access both
 data (such as databases) and algorithms.
 
-There are many protocols by which web services such as SOAP and
+There are many protocols by which web services such as SOAP, REST, and
 XMPP~\cite{Wagener2009}. Most web service protocols are designed to
 work with multiple types of transport layers (HTTP, UDP, etc) but the
 majority of web service protocols currently in use work over
-HTTP. This approach results in significant;y easier deploy of services
+HTTP. This approach results in significantly easier deploy of services
 and access to them, since HTTP is ubiquitous throughout the
 Internet. For a more detailed review of web service technologies the
 reader is referred to XXX and YYY.
@@ -461,7 +462,7 @@ services [REF] that provide access to core cheminformatics methods
 (fingerprints, 2D depiction and various molecular descriptors),
 statistical techniques (using R [REF] as the backend) and chemical
 database access methods. Most of these services are implemented in
-Java using the Chemistry Development Kit [REF] and SOAP as the
+Java using the Chemistry Development Kit~\cite{Steinbeck2003} and SOAP as the
 underlying protocol. A detailed description of these services can be
 found in Dong et al~\cite{Dong2007Web}. The services have been used in
 a variety of scenarios. For example, the fingerprint and statistical
@@ -478,7 +479,7 @@ REST based services. While SOAP services can be ``hidden'' behind a
 REST interface, the reimplementation avoids the extra complexity
 imposed by SOAP, by directly exposing the functionality via the REST
 interface. These services can be found at
-\href{http://rguha.net/rest}{http://rguha.net/rest}. Curently, the
+\url{http://rguha.net/rest}. Curently, the
 services are hosted at multiple locations include Drexel University,
 USA and Uppsala University, Sweden and are utilized by a number of
 independent applications. An example is the use of these services to
@@ -501,7 +502,7 @@ useful it is more appropriate to explore it from a chemical point of
 view - that is, in terms of structures and substructures.
 
 As a result, a simple web page interface
-(\href{http://toposome.chemistry.drexel.edu/~rguha/jcsol/sol.html}{http://toposome.chemistry.drexel.edu/~rguha/jcsol/sol.html})
+(\url{http://toposome.chemistry.drexel.edu/~rguha/jcsol/sol.html})
 was developed that extract data from the Google spreadsheet via the
 Google-provided Data API and presented the data or filtered subsets of
 the data (based on solute or solvent identifiers, substructures or
@@ -520,7 +521,7 @@ public web services hosted at another, remote location to extract and
 present data that satisfied the requirements of another, external
 group (i.e., the experimentalists making the measurements).
 
-A related application (\href{http://old.oru.edu/cccda/sl/descriptorspace/ds.php}{http://old.oru.edu/cccda/sl/descriptorspace/ds.php}) 
+A related application (\url{http://old.oru.edu/cccda/sl/descriptorspace/ds.php}) 
 was developed by another researcher to
 explore the chemical space (via descriptor calculations followed by
 principal components analysis). This application also made use of the
@@ -565,13 +566,13 @@ coupled with the fact that in most cases, such workflow tools require
 no programming knowledge make such tools very attractive to
 experimentalists and other users with limited programming
 experience. A number of such tools are available including Pipeline
-Pilot, KNIME and Taverna.
+Pilot, KNIME and Taverna~\cite{Oinn2004}.
 
 A recent development around workflow tools is the sharing of workflow
 specifications (or ``programs''), exemplified by the MyExperiment
 website~\cite{Goble2010} which allows sharing of scientific workflow
 of various formats, including Taverna (see Figure~\ref{fig:myexperiment})
-and Bioclipse.
+and Bioclipse~\cite{Spjuth2009,Spjuth2007}.
 
 \begin{figure}
 \begin{center}
@@ -581,12 +582,6 @@ and Bioclipse.
 Taverna workflow (\url{http://www.myexperiment.org/workflows/389.html}).}
 \label{fig:myexperiment}
 \end{figure}
-
-\subsection{Collaboration Tools}
-
-Taverna~\cite{Oinn2004} ... CDK-Taverna~\cite{Kuhn2010} ...
-
-Bioclipse~\cite{Spjuth2009,Spjuth2007}...
 
 
 \section{Managing Collaborative Projects}
@@ -701,7 +696,17 @@ is vital to the successful completion of a collaborative project.
 
 \section{Conclusion}
 
-In this chapter we have shown
+In this chapter we have discussed the various aspects of collaborative
+cheminformatics. We outlined tools available for software development,
+building knowledge bases, and tools for collaborative computing.
+We also outlined the roles Open Source, Open Data, and Open Standards
+have in building successful collaborations, such as the roles of
+licensing as social contract between collaborators, and communication
+channels to discuss ideas. Similarly, we shows how Open Standards
+make it easier to build collaborative knowledge bases as they
+provide a unified, clear-to-all interface to the data. We further
+described how collaborative computing can be set up and how
+scientists can share high-level workflow specifications.
 
 \bibliographystyle{unsrt}
 \bibliography{chapter}
