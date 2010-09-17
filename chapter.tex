@@ -1,6 +1,7 @@
 \documentclass[12pt]{book}
 
 \newcommand{\refname}{}
+\newcommand{\ola}[1]{{\color{green} OLA: #1}}
 
 \usepackage[utf8]{inputenc}
 %\usepackage{a4wide}
@@ -24,8 +25,8 @@ Rajarshi Guha, Ola Spjuth, Egon Willighagen
 
 Cheminformatics is the science of chemical data and computation.
 The origin of the data is the wet lab, making collaboration an
-intrinsic part of cheminformatics. However, as the field matured
-it become more specialized, and with more specialization the
+intrinsic part of cheminformatics \ola{Why is this the case?}. However, as the field matured
+it became more specialized, and with more specialization the
 nature of those collaborations changed: collaboration could
 have started as a lab scientist doing cheminformatics on the
 side, after which it evolved to people specializing in
@@ -56,11 +57,11 @@ The first section will focus on methods involved in the collaborative
 development of cheminformatics software, and discuss the tools modern
 scientists have to perform this task. The next section will describe
 recent changes in which we handle chemical data and knowledge, and
-in particular how the Internet is changing how communities crate new
+in particular how the Internet is changing the way communities create new
 knowledge bases. The third section will focus on the aspects of
 collaborative computing in cheminformatics.
 
-A fourth section describes social aspects of collaborative projects,
+A fourth section will describe social aspects of collaborative projects,
 and in particular how collaboration is managed in projects with
 only loosely defined roles of the various partners.
 
@@ -77,19 +78,19 @@ or wants to lead the project, as the topic is not core business.
 
 An example of the latter situation is the JChemPaint project. There are existing
 similar projects, making continued development out of scope of cheminformatics
-research. However, Steinbeck et al. showing in 1998 that a collaborative project
-can lead to an eco system where such software can still be
+research. However, Steinbeck et al. showed in 1998 that a collaborative project
+can lead to an ecosystem where such software can still be
 developed~\cite{Krause2000}.
 
-Central to collaborative code development is sharing source code. Particularly,
+Central to collaborative code development is the sharing of source code. Particularly,
 it is pipelining how patches are shared and applied. While some cheminformatics
 projects still share source code as source distributions, the adoption of
-source code repositories as the golden standard. There are various 
+source code repositories has emerged as the golden standard. There are various 
 open source repository technologies around, including Concurrent Versions System (CVS),
-Subversion (SVN), Mercurial, Bazaar, and Git. CVS is the oldest and mostly replaced
+Subversion (SVN), Mercurial, Bazaar, and Git \ola{Should we have references to these?}. CVS is the oldest and mostly replaced
 by the newer technologies. Subversion is still abundant, but increasingly
 replaced by the last three technologies. The reason for this is that
-those three are distributed technologies, allowing server redundancy.
+those three are distributed technologies, allowing for server redundancy.
 
 Moreover, because of the distributed nature of Mercurial, Bazaar, and Git,
 branching and merges of branches is often easier. However, the increased
@@ -122,7 +123,7 @@ that provide free online hosting.}
 
 \subsection{Licensing}
 
-Another aspect that makes collaboration easier, is to use an
+Another aspect that simplifies collaboration is to use an
 Open Source license. Such a license ensures that potential
 contributors know that whatever work they invest in the source
 code is not lost: it will always be available to that
@@ -133,16 +134,16 @@ details is well beyond the scope of this chapter, however.
 They reader is kindly invited to read the book
 Open Source Licensing by Lawrence Rosen~\cite{Rosen2004}.
 Popular Open Source licenses include the GPL
-licenses, and the MIT and BSD licenses. A full overview of Open
+licenses, and the MIT and BSD licenses \ola{Should we write out what the abbreviations stand for, e.g. Gnu General Public License?}. A full overview of Open
 Source licenses is available from the Open Source Initiative:
 \url{http://www.opensource.org/licenses}.
 
 \subsection{Communication}
 
 While sharing the source code is the primary channel of collaborative
-code development, communication is a closed second. Designs
-need to be discussed, solutions proposed. Traditionally,
-mailing lists are popular ways of communication. A mailing
+code development, communication is a close second. Designs
+need to be discussed, and solutions proposed. Mailing lists have 
+traditionally been popular communication channels. A mailing
 list is a "collection of names and addresses used by an individual
 or an organization to send material to multiple recipients"~\cite{wp:mailinglist}
 and simplifies sending an email to a particular development or
@@ -156,7 +157,7 @@ have started using blogs, where they discuss algorithms, theories,
 etc. Among those blogs are those of two of the authors of this
 chapter (see \url{http://blog.rguha.net/} and
 \url{http://chem-bla-ics.blogspot.com/}),
-but other blogs include the excellent that of
+but other blogs include the excellent one of
 Gilleain Torrance (\url{http://gilleain.blogspot.com/}),
 Noel O'Boyle (\url{http://baoilleach.blogspot.com/}), and
 Tim VanderMeersch (\url{http://timvdm.blogspot.com/}).
@@ -209,7 +210,7 @@ to a problem they have.}
 
 Another aspect of collaborative development is that one can
 take advantage of peer review. While the role of peer review
-in scientific publishing is well recognized, it is hardly
+in scientific publishing is well recognized, it is seldom
 applied to scientific programming. Nevertheless, the
 advantages are clearly recognized, such as written up
 in the famous writing \textit{The Cathedral and the Bazaar}~\cite{Raymond2001}:
@@ -227,11 +228,11 @@ this is where it may not apply to cheminformatics, where
 the number of potential people looking at the code is
 relatively low. Moreover, developers from competing projects
 may have additional reasons not to review work from other
-projects, further reducing the number of reviewers.
-
+projects, further reducing the number of reviewers. 
 It should be noted that this problem is general to science,
 and that peer review of publications too typically requires
-a more formal approach. Code development has the advantage
+a more formal approach. Peer reviewed code development 
+has the advantage
 that static source code checkers are available that can
 detect common problems, such as PMD (\url{http://pmd.sf.net/}).
 These tools check, for example, for unused variables, dead
@@ -314,14 +315,14 @@ a community effort to share knowledge around the OpenTox Open Standard~\cite{Har
 OpenTox provides an interoperable standard for the support of predictive toxicology,
 including data management, and the specification of algorithms, modeling, validation and
 reporting. OpenTox takes advantage of other Open Standards for data representation,
-interfaces, vocabularies and ontologies: functionality is provided as REST services,
-and replies are provided in various formats, including Resource Description Framework,
-the underlying technology of the Semantic Web.
+interfaces, vocabularies and ontologies: functionality is provided as REST~\cite{fielding:2000} services,
+and replies are provided in various formats, including Resource Description Framework [REF],
+the underlying technology of the Semantic Web [REF].
 
 \subsection{Data standardization and interoperability}
 
 Sharing of information and data requires well developed standards and exchange formats.
-An example in cheminformatics is the extensible Chemical Markup Language (CML) which
+An example in cheminformatics is the extensible Chemical Markup Language (CML) [REF] which
 is an approach to manage primarily molecular data, which has been extended to also
 comprise other entities, including reactions and spectra. Another example is HUPO-PSI
 Molecular Interaction format for the representation of molecular interaction
@@ -348,9 +349,9 @@ is, and that it is subclass of \textit{chemical entities}, and that a molecule c
 a \textit{boiling point}, and that a boiling point is a \textit{physical property of a chemical
 entity}. These are the kind facts expressed in domain ontologies.
 Ontologies have been used in chemistry since at least the 80-ties~\cite{Gordon1983},
-but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar2010}, possible triggered by the
+but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar2010}, possibly triggered by the
 open eXtensible Markup Language (XML) and and Web Ontology Language (OWL)
-standards.
+standards [REF].
 
 Ongoing community efforts to define ontologies related to cheminformatics include
 the OpenTox API mentioned earlier, the Blue Obelisk Descriptor Ontology, and the
@@ -364,7 +365,7 @@ reproducible way. In QSAR, chemical structures are described by numerical vector
 uniquely defining descriptors. Also included is support for multiple versioned
 implementations of these descriptors, which could be available on the local computer
 or via remote Web services. QSAR-ML also comes with a reference implementation for
-the Bioclipse~\cite{Spjuth2009,Spjuth2007} workbench, which provides a graphical
+the Bioclipse workbench~\cite{Spjuth2009,Spjuth2007}, which provides a graphical
 interface for setting up QSAR data sets. Prominent features include adding and
 normalizing chemical structures in various formats, cherry-picking local and
 remote descriptor implementations, adding responses and metadata, and finally
@@ -387,7 +388,7 @@ the Greasemonkey Mozilla extension and later by Ubiquity Mozilla
 extension. A userscript was simply a small JavaScript program that
 runs on the client browser and can modify a given web page before it
 is displayed to the viewer. In other words, given permission to do so,
-a userscript can completely rewrite a webpage in any way it sees
+a userscript can completely rewrite a web page in any way it sees
 fit. This opens up exciting possibilities in annotating web content
 and linking web content to arbitrary data sources. A variety of
 userscripts for cheminformatics have been described by Willighagen et
@@ -444,7 +445,7 @@ RPC and CORBA) as well as data. In this sense, we consider web
 services to be a generalization, allowing one to provide access both
 data (such as databases) and algorithms.
 
-There are many protocols by which web services such as SOAP, REST, and
+There are many protocols by which web services are based upon, such as SOAP, REST and
 XMPP~\cite{Wagener2009}. Most web service protocols are designed to
 work with multiple types of transport layers (HTTP, UDP, etc) but the
 majority of web service protocols currently in use work over
@@ -489,7 +490,7 @@ have experimentally determined the solubility of a variety of solutes
 in a variety of solvents. All the data generated as part of this
 project is publicly hosted on a GoogleDocs spreadsheet and outsiders
 are encouraged to explore and mine the data, with the hope that their
-results will be also be made Open. At the time of writing the project
+results also will be Open. At the time of writing the project
 has seen contributions from a number of people, including chemists,
 mathematicians and programmers. As the project has grown, the number
 of measurements now numbers in the hundreds. The spreadsheet contains
@@ -547,7 +548,7 @@ installation and management and onerous licensing conditions.
 \subsection{Sharing Computation Specifications}
 
 A simple example of a ``computation specification'' is the source code
-of a program or even and input file for a program. In both cases, the
+of a program or even an input file for a program. In both cases, the
 document fully specifies what is required to run a program to achieve
 a desired result. Clearly there have been many mechanisms to share
 such specifications. However, with a few exceptions these sharing
@@ -574,6 +575,8 @@ website~\cite{Goble2010} which allows sharing of scientific workflow
 of various formats, including Taverna (see Figure~\ref{fig:myexperiment})
 and Bioclipse~\cite{Spjuth2009,Spjuth2007}.
 
+\ola{Add BSL script + more text about reproducibility}
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphics/myexperiment.png}
@@ -591,7 +594,7 @@ and enhance collaborative projects in the field of
 cheminformatics. Yet, one aspect still remains. While tools are
 available to share source code and experimental data, how are such
 collaborative projects managed? When the collaboration is between two
-individuals, project management is not a significant problem. It
+individuals, project management is not a significant problem, but it
 becomes much more problematic when the number of collaborators grows
 larger.
 
@@ -612,7 +615,8 @@ Relay Chat (IRC) or instant messengers (Yahoo Chat, AOL, etc.) offer
 real time interactivity between participants. These systems allow for
 direct interactions between multiple members and are extremely useful
 for on-the-fly problem solving and discussions. Of course, since these
-technologies are text based, it can be slower than phone or video
+technologies are text based, it can be slower to communicate problems 
+than phone or video
 conferencing. But on the other hand, these systems are very light on
 resources and efficient on slow Internet connections.
 
@@ -632,7 +636,7 @@ between members of a collaboration and other interested parties. But
 another vital aspect of collaborative projects is the development of
 documentation - ranging from API documentation to tutorials and policy
 documents. While one could exchange documents via email, one very
-quickly runs into the problem of keeping everybody's edits
+quickly runs into the problem of keeping everybody's editions
 synchronized. Collaborative document editing systems have recently
 been developed that directly address this problem. One example is
 Google Docs, which is an online resource that allows one to create
@@ -652,7 +656,7 @@ collection of pages, linked via hyperlinks and that authorized users
 can edit, add to or delete these pages arbitrarily. Most wikis will
 also keep a history of the edits made to each page, allowing one to
 track who did what. In contrast to something like Google Docs, wikis
-are much more free form (indeed, they are fundamentally just web
+are much more free form\ola{Repetition} (indeed, they are fundamentally just web
 pages). In addition, it is possible to add arbitrary files to a wiki,
 which allows one to record and track the entire state of a project
 over time (cf. the Open Notebook Science Solubility Challenge on
