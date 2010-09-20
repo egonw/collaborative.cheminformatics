@@ -2,6 +2,7 @@
 
 \newcommand{\refname}{}
 \newcommand{\ola}[1]{{\color{green} OLA: #1}}
+\newcommand{\rg}[1]{{\color{red} RG: #1}}
 
 \usepackage[utf8]{inputenc}
 %\usepackage{a4wide}
@@ -23,18 +24,20 @@ Rajarshi Guha, Ola Spjuth, Egon Willighagen
 \end{LARGE}
 \vspace{1.5cm}
 
-Cheminformatics is the science of chemical data and computation.
-The origin of the data is the wet lab, making collaboration an
-intrinsic part of cheminformatics \ola{Why is this the case?}. However, as the field matured
-it became more specialized, and with more specialization the
-nature of those collaborations changed: collaboration could
-have started as a lab scientist doing cheminformatics on the
-side, after which it evolved to people specializing in
-cheminformatics while collaborating with other scientists
-in the same group, and later in other groups. Nowadays,
-it is no longer uncommon to collaborate with scientists around
-the world, as even the same university may no longer share
-the same specialism. This is the era of online science.
+Cheminformatics is the science of chemical data and computation.  The
+origin of the data is the wet lab, making collaboration an intrinsic
+part of cheminformatics as most cheminformatics methodologies are
+developed using real data, which must also be tested on real data for
+it to be used in experimental settings. \ola{Why is this the
+  case?}. However, as the field matured it became more specialized,
+and with more specialization the nature of those collaborations
+changed: collaboration could have started as a lab scientist doing
+cheminformatics on the side, after which it evolved to people
+specializing in cheminformatics while collaborating with other
+scientists in the same group, and later in other groups. Nowadays, it
+is no longer uncommon to collaborate with scientists around the world,
+as even the same university may no longer share the same
+specialism. This is the era of online science.
 
 Fortunately, cheminformatics is at an advantage compared to
 other sciences, as the data exchange, processing, and analysis
@@ -56,14 +59,13 @@ and data exchange, and collaborative computation.
 The first section will focus on methods involved in the collaborative
 development of cheminformatics software, and discuss the tools modern
 scientists have to perform this task. The next section will describe
-recent changes in which we handle chemical data and knowledge, and
-in particular how the Internet is changing the way communities create new
+recent changes in which we handle chemical data and knowledge, and in
+particular how the Internet is changing the way communities create new
 knowledge bases. The third section will focus on the aspects of
-collaborative computing in cheminformatics.
-
-A fourth section will describe social aspects of collaborative projects,
-and in particular how collaboration is managed in projects with
-only loosely defined roles of the various partners.
+collaborative computing in cheminformatics. Finally, the fourth
+section will describe social aspects of collaborative projects, and in
+particular how collaboration is managed in projects with only loosely
+defined roles of the various partners.
 
 \section{Collaborative Code Development}
 
@@ -87,7 +89,8 @@ it is pipelining how patches are shared and applied. While some cheminformatics
 projects still share source code as source distributions, the adoption of
 source code repositories has emerged as the golden standard. There are various 
 open source repository technologies around, including Concurrent Versions System (CVS),
-Subversion (SVN), Mercurial, Bazaar, and Git \ola{Should we have references to these?}. CVS is the oldest and mostly replaced
+Subversion (SVN), Mercurial, Bazaar, and Git \ola{Should we have
+  references to these?} \rg{I think links will be sufficient}. CVS is the oldest and mostly replaced
 by the newer technologies. Subversion is still abundant, but increasingly
 replaced by the last three technologies. The reason for this is that
 those three are distributed technologies, allowing for server redundancy.
@@ -95,7 +98,7 @@ those three are distributed technologies, allowing for server redundancy.
 Moreover, because of the distributed nature of Mercurial, Bazaar, and Git,
 branching and merges of branches is often easier. However, the increased
 functionality also introduces further complexity, which is particularly
-the case for Git, causing an increased learning curve.
+the case for Git, leading to a steeper learning curve.
 
 As these tools are Open Source, anyone is able to set up a local server, but
 Open Source projects can take advantage of service providers that host
@@ -134,11 +137,16 @@ details is well beyond the scope of this chapter, however.
 They reader is kindly invited to read the book
 Open Source Licensing by Lawrence Rosen~\cite{Rosen2004}.
 Popular Open Source licenses include the GPL
-licenses, and the MIT and BSD licenses \ola{Should we write out what the abbreviations stand for, e.g. Gnu General Public License?}. A full overview of Open
+licenses, and the MIT and BSD licenses \ola{Should we write out what
+  the abbreviations stand for, e.g. Gnu General Public License?}
+\rg{I'd probably skip that, as the references should be enough}. A full overview of Open
 Source licenses is available from the Open Source Initiative:
 \url{http://www.opensource.org/licenses}.
 
 \subsection{Communication}
+
+\rg{Maybe this section could be shortened and the bulk of it moved to
+  the Managing ... section, later on}
 
 While sharing the source code is the primary channel of collaborative
 code development, communication is a close second. Designs
@@ -185,7 +193,7 @@ a specific developer or user community. One such website
 that aggregates cheminformatics blogs is Chemical blogspace
 (see Figure~\ref{fig:cb}).
 
-A similar role have Question \& Answer websites, a new
+A similar role is played by Question \& Answer websites, a new
 type of communication channel popularized by StackOverflow
 (\url{http://stackoverflow.com/}). This communication
 concept is used, for example, by a the Blue Obelisk
@@ -193,7 +201,13 @@ eXchange at \url{http://blueobelisk.shapado.com/}
 (see Figure~\ref{fig:shapado}) where
 people can ask question on how to use a particular
 cheminformatics library, or how to solve a particular
-problem.
+problem. These sites essentially extend the concept of Frequently
+Asked Question (FAQ) documents, except that they are grown and
+maintained by a community rather than a single person. In addition,
+novel mechanisms such as merit points and badges and the ability to
+up vote (or down vote) for answers provide a ``social incentive'' to
+the users of such sites to engage in the community (as opposed to
+simply taking information, a.k.a., leeching).
 
 \begin{figure}
 \begin{center}
@@ -380,7 +394,8 @@ and makes it is easy to join, extend, combine and also to work collectively with
 Key to collaboration is also the sharing of knowledge. A prominent role here
 plays the linking of various databases, which allows integration of them.
 
-Resource Description Framework ... HCLS, Bio2RDF, Chem2Bio2RDF, ...
+Resource Description Framework ... HCLS, Bio2RDF, Chem2Bio2RDF,
+... \rg{It'd be useful to expand on this topics a little more}
 
 Userscripts present an approach to linking resources with a very low
 barrier to entry. The idea of a userscript was first made available by
@@ -452,16 +467,17 @@ majority of web service protocols currently in use work over
 HTTP. This approach results in significantly easier deploy of services
 and access to them, since HTTP is ubiquitous throughout the
 Internet. For a more detailed review of web service technologies the
-reader is referred to XXX and YYY.
+reader is referred to Curcin et al\cite{Curcin:2005fk} and Fielding et
+al\cite{Fielding:2002eu}.
 
 In this section we provide a brief overview of cheminformatics web
 services and some use cases highlighting the collaborative potential
 of such web services.
 
 Indiana University has developed a number of cheminformatics web
-services [REF] that provide access to core cheminformatics methods
+services\cite{Dong:2007Web} that provide access to core cheminformatics methods
 (fingerprints, 2D depiction and various molecular descriptors),
-statistical techniques (using R [REF] as the backend) and chemical
+statistical techniques (using R\cite{r} as the backend) and chemical
 database access methods. Most of these services are implemented in
 Java using the Chemistry Development Kit~\cite{Steinbeck2003} and SOAP as the
 underlying protocol. A detailed description of these services can be
@@ -586,6 +602,8 @@ Taverna workflow (\url{http://www.myexperiment.org/workflows/389.html}).}
 \label{fig:myexperiment}
 \end{figure}
 
+\rg{Maybe this section could be dropped as they are not collaboration
+  tools per se}
 
 \section{Managing Collaborative Projects}
 
@@ -605,7 +623,7 @@ history and mailing lists are a useful way to broadcast messages to
 all members of a group. This has its downside as well, as many members
 may not desire such broadcasted messages. Furthermore, email is
 relatively inefficient at handling multiple conversations, though
-threading [REF] does alleviate this. Modern email systems such as
+threading does alleviate this. Modern email systems such as
 Google Mail have provided a number of enhancements to improve the
 handling of multiple conversations in a mailing list. 
 
