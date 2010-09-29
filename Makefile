@@ -7,7 +7,7 @@ chapter.bbl: chapter.bib
 	pdflatex chapter || true
 	bibtex chapter || true
 
-chapter.pdf: chapter.tex chapter.bbl
+chapter.pdf: chapter.tex chapter.bbl graphics/*
 	pdflatex chapter
 	pdflatex chapter
 	pdflatex chapter
