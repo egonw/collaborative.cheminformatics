@@ -268,7 +268,8 @@ the underlying technology of the Semantic Web~\cite{BernersLee2001}.
 \subsection{Data standardization and interoperability}
 
 Sharing of information and data requires well developed standards and exchange formats.
-An example in cheminformatics is the extensible Chemical Markup Language (CML) [REF] which
+An example in cheminformatics is the extensible Chemical Markup Language
+(CML)~\cite{MurrayRust1999} which
 is an approach to manage primarily molecular data, which has been extended to also
 comprise other entities, including reactions and spectra. Another example is HUPO-PSI
 Molecular Interaction format for the representation of molecular interaction
@@ -295,9 +296,9 @@ is, and that it is subclass of \textit{chemical entities}, and that a molecule c
 a \textit{boiling point}, and that a boiling point is a \textit{physical property of a chemical
 entity}. These are the kind facts expressed in domain ontologies.
 Ontologies have been used in chemistry since at least the 80-ties~\cite{Gordon1983},
-but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar2010}, possibly triggered by the
-open eXtensible Markup Language (XML) and and Web Ontology Language (OWL)
-standards [REF].
+but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar2010},
+possibly triggered by the open eXtensible Markup Language (XML)~\cite{Bray:08:EML}
+and and Web Ontology Language (OWL) standards~\cite{Group:09:OWO}.
 
 Ongoing community efforts to define ontologies related to cheminformatics include
 the OpenTox API mentioned earlier, the Blue Obelisk Descriptor Ontology, and the
@@ -325,6 +326,10 @@ and makes it is easy to join, extend, combine and also to work collectively with
 
 Key to collaboration is also the sharing of knowledge. A prominent role here
 plays the linking of various databases, which allows integration of them.
+Traditionally, linking databases is done by using shared identifiers.
+Well-known identifiers for chemical structures include the
+database-specific identifiers, such as the CAS registry number,
+PubChem Compound Identifier, and ChemSpider Compound Identifier.
 
 Resource Description Framework ... HCLS, Bio2RDF, Chem2Bio2RDF,
 ... \rg{It'd be useful to expand on this topics a little more}
@@ -341,11 +346,11 @@ and linking web content to arbitrary data sources. A variety of
 userscripts for cheminformatics have been described by Willighagen et
 al~\cite{Willighagen2007b}. For example, when viewing a web page describing
 chemistry, a userscript can be written to take the text and run it
-through a chemical entity recognition tool (such as OSCAR [REF]) and
+through a chemical entity recognition tool (such as Oscar3~\cite{Corbett2006}) and
 then highlight terms that were recognized. Such a script can be further
 enhanced by not only highlighting recognized terms, but inserting
 hyperlinks to chemical databases such as PubChem or
-ChemSpider. Another application described by Willighagen et al, was to
+ChemSpider. Another userscript application described, is to
 display 3D structures of molecules when browsing PubChem web pages. In
 the past, PubChem did not provide 3D structure information. On the
 other hand, Indiana University had generated a single low energy
@@ -432,7 +437,7 @@ interface. These services can be found at
 services are hosted at multiple locations include Drexel University,
 USA and Uppsala University, Sweden and are utilized by a number of
 independent applications. An example is the use of these services to
-enhance an Open Notebook Science (ONS) project. The ONS Solubility
+enhance an Open Notebook Science (ONS) project~\cite{Bradley2009}. The ONS Solubility
 Challenge is an ongoing project in which a number of research groups
 have experimentally determined the solubility of a variety of solutes
 in a variety of solvents. All the data generated as part of this
@@ -534,8 +539,9 @@ Taverna workflow (\url{http://www.myexperiment.org/workflows/389.html}).}
 \label{fig:myexperiment}
 \end{figure}
 
-\rg{Maybe this section could be dropped as they are not collaboration
-  tools per se}
+\subsection{Online Cheminformatics Computation}
+
+XXXXX
 
 \section{Managing Collaborative Projects}
 
@@ -575,10 +581,17 @@ Relay Chat (IRC) or instant messengers (Yahoo Chat, AOL, etc.) offer
 real time interactivity between participants. These systems allow for
 direct interactions between multiple members and are extremely useful
 for on-the-fly problem solving and discussions. Of course, since these
-technologies are text based, it can be slower to communicate problems 
-than phone or video
+technologies are text based, and it can be slower to communicate
+problems than with phone or video
 conferencing. But on the other hand, these systems are very light on
-resources and efficient on slow Internet connections.
+resources and efficient on slow Internet connections. The use of
+IRC is particularly prominent amongst Open Source projects. For
+example, Bioclipse, OpenBabel, and CDK developers use, respectively,
+the \#bioclipse, \#openbabel, and \#cdk channels on the
+\url{http://www.freenode.net} network. While it is common to use
+dedicated IRC clients (see Wikipedia~\cite{wp:ircclients}),
+these channels can also be accessed via a web interface at
+\url{http://webchat.freenode.net/}.
 
 More recently, weblogs or blogs, have become a useful mode of
 communication. This approach allows a degree of interactivity between
