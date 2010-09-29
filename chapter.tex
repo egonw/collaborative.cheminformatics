@@ -1,4 +1,4 @@
-\documentclass[12pt]{book}
+\documentclass[11pt]{book}
 
 \newcommand{\refname}{}
 \newcommand{\ola}[1]{{\color{green} OLA: #1}}
@@ -26,10 +26,15 @@ Rajarshi Guha, Ola Spjuth, Egon Willighagen
 
 Cheminformatics is the science of chemical data and computation.  The
 origin of the data is the wet lab, making collaboration an intrinsic
-part of cheminformatics as most cheminformatics methodologies are
-developed using real data, which must also be tested on real data for
-it to be used in experimental settings. \ola{Why is this the
-  case?}. However, as the field matured it became more specialized,
+part of cheminformatics. Most cheminformatics methodologies are
+developed using experimental data, finding patterns of various
+levels. These metadologies are typically mathematical and are
+actually aimed at finding correlation, not physical and chemical
+cause-effect relations. Therefore, the field finds itself once
+again collaborating with the experimental scientist to validate
+the predictions it came up with against new experimental data.
+
+However, as the field matured it became more specialized,
 and with more specialization the nature of those collaborations
 changed: collaboration could have started as a lab scientist doing
 cheminformatics on the side, after which it evolved to people
@@ -89,8 +94,7 @@ it is pipelining how patches are shared and applied. While some cheminformatics
 projects still share source code as source distributions, the adoption of
 source code repositories has emerged as the golden standard. There are various 
 open source repository technologies around, including Concurrent Versions System (CVS),
-Subversion (SVN), Mercurial, Bazaar, and Git \ola{Should we have
-  references to these?} \rg{I think links will be sufficient}. CVS is the oldest and mostly replaced
+Subversion (SVN), Mercurial, Bazaar, and Git. CVS is the oldest and mostly replaced
 by the newer technologies. Subversion is still abundant, but increasingly
 replaced by the last three technologies. The reason for this is that
 those three are distributed technologies, allowing for server redundancy.
@@ -100,7 +104,8 @@ branching and merges of branches is often easier. However, the increased
 functionality also introduces further complexity, which is particularly
 the case for Git, leading to a steeper learning curve.
 
-As these tools are Open Source, anyone is able to set up a local server, but
+As these tools are Open Source, anyone is able to set up a local,
+possibly private server, but
 Open Source projects can take advantage of service providers that host
 free and public code repositories. Table~\ref{tab:cvsProviders}
 provides an overview of various larger service providers, but there
@@ -126,7 +131,7 @@ that provide free online hosting.}
 
 \subsection{Licensing}
 
-Another aspect that simplifies collaboration is to use an
+A second aspect that simplifies collaboration is to use an
 Open Source license. Such a license ensures that potential
 contributors know that whatever work they invest in the source
 code is not lost: it will always be available to that
@@ -137,94 +142,22 @@ details is well beyond the scope of this chapter, however.
 They reader is kindly invited to read the book
 Open Source Licensing by Lawrence Rosen~\cite{Rosen2004}.
 Popular Open Source licenses include the GPL
-licenses, and the MIT and BSD licenses \ola{Should we write out what
-  the abbreviations stand for, e.g. Gnu General Public License?}
-\rg{I'd probably skip that, as the references should be enough}. A full overview of Open
+licenses, and the MIT and BSD licenses. A full overview of Open
 Source licenses is available from the Open Source Initiative:
 \url{http://www.opensource.org/licenses}.
 
-\subsection{Communication}
-
-\rg{Maybe this section could be shortened and the bulk of it moved to
-  the Managing ... section, later on}
+\subsection{Peer review}
 
 While sharing the source code is the primary channel of collaborative
 code development, communication is a close second. Designs
-need to be discussed, and solutions proposed. Mailing lists have 
-traditionally been popular communication channels. A mailing
-list is a "collection of names and addresses used by an individual
-or an organization to send material to multiple recipients"~\cite{wp:mailinglist}
-and simplifies sending an email to a particular development or
-user community: by sending an email to the mailing list address
-it is automatically distributed the all participants.
+need to be discussed, and solutions proposed. Peer review
+is part of this, and plays an important part in collaborative
+code development. A full discussion of communication
+will be discussed later in this chapter as part of project
+management, and here we will focus on peer review only.
 
-One interesting aspect is that increasingly this communication
-is becoming more open and no longer limited to one project as
-it often the case for mailing lists. Many Open Source developers
-have started using blogs, where they discuss algorithms, theories,
-etc. Among those blogs are those of two of the authors of this
-chapter (see \url{http://blog.rguha.net/} and
-\url{http://chem-bla-ics.blogspot.com/}),
-but other blogs include the excellent one of
-Gilleain Torrance (\url{http://gilleain.blogspot.com/}),
-Noel O'Boyle (\url{http://baoilleach.blogspot.com/}), and
-Tim VanderMeersch (\url{http://timvdm.blogspot.com/}).
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.8\textwidth]{graphics/cb.png}
-\end{center}
-\caption{The Cheminformatics section of Chemical blogspace
-aggregates blog posts from cheminformaticians, providing
-a platform for discussion of algorithms, theory, within
-a larger community than that of a single project.}
-\label{fig:cb}
-\end{figure}
-
-Blog planets and aggregators play an important role here.
-Various cheminformatics projects have blog planets, where
-the blogs from developers and users from the community
-around that project are aggregated. For example, the
-Chemistry Development Kit and Bioclipse have planets
-at respectively \url{http://pele.farmbio.uu.se/planetcdk/} and
-\url{planet.bioclipse.net}.
-Aggregators also aggregate blogs, but not necessarily around
-a specific developer or user community. One such website
-that aggregates cheminformatics blogs is Chemical blogspace
-(see Figure~\ref{fig:cb}).
-
-A similar role is played by Question \& Answer websites, a new
-type of communication channel popularized by StackOverflow
-(\url{http://stackoverflow.com/}). This communication
-concept is used, for example, by a the Blue Obelisk
-eXchange at \url{http://blueobelisk.shapado.com/}
-(see Figure~\ref{fig:shapado}) where
-people can ask question on how to use a particular
-cheminformatics library, or how to solve a particular
-problem. These sites essentially extend the concept of Frequently
-Asked Question (FAQ) documents, except that they are grown and
-maintained by a community rather than a single person. In addition,
-novel mechanisms such as merit points and badges and the ability to
-up vote (or down vote) for answers provide a ``social incentive'' to
-the users of such sites to engage in the community (as opposed to
-simply taking information, a.k.a., leeching).
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.8\textwidth]{graphics/boShapado.png}
-\end{center}
-\caption{The Blue Obelisk eXchange Question \& Answer
-website is a open platform where people can ask on how
-to use cheminformatics software, or ask for solutions
-to a problem they have.}
-\label{fig:shapado}
-\end{figure}
-
-\subsection{Peer review}
-
-Another aspect of collaborative development is that one can
-take advantage of peer review. While the role of peer review
-in scientific publishing is well recognized, it is seldom
+While the role of peer review in scientific publishing is
+well recognized as an important path for communication, it is seldomly
 applied to scientific programming. Nevertheless, the
 advantages are clearly recognized, such as written up
 in the famous writing \textit{The Cathedral and the Bazaar}~\cite{Raymond2001}:
@@ -260,17 +193,16 @@ social pressure to write better source code.
 Figure~\ref{fig:githubCodereview} show an example comment
 made via the GitHub website.
 
-\begin{figure}
+\begin{figure}[bt]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphics/codeReview8.png}
 \end{center}
 \caption{Screenshot of the GitHub webpage providing code
 review functionality. The comments shows a reviewer question
 regarding a parameter description missing in the JavaDoc
-(see \url{http://github.com/egonw/bioclipse.cheminformatics/commit/3ce78ba}).}
+(see \url{http://github.com/bioclipse/bioclipse.cheminformatics/commit/3ce78ba}).}
 \label{fig:githubCodereview}
 \end{figure}
-
 
 \begin{figure}[bt]
 \begin{center}
@@ -298,7 +230,7 @@ like PubChem and ChemSpider where people can deposit chemical
 structures.
 Social sites to share Open Data include the
 NMRShiftDB~\cite{Steinbeck2004} (GNU FDL license),
-ChemPedia (\url{http://chempedia.org/substances}, CC0 license),
+ChemPedia~\cite{chempedia} (CC0 license),
 and the Blue Obelisk Data Repository is a collaborative project by a number
 of cheminformatics tools~\cite{Guha2006}, including Kalzium (see Figure~\ref{fig:kalzium}),
 the Chemistry Development Kit, and others.
@@ -306,7 +238,7 @@ However, it should be noted that these collaborative, Open Data
 resources are small in size, and that the collaborating community
 is not (yet) of critical mass.
 
-\begin{figure}
+\begin{figure}[bt]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphics/wikichemistry}
 \end{center}
@@ -316,8 +248,7 @@ editing of chemical articles on Wikipedia.}
 \end{figure}
 
 Wikipedia, instead, has an active development community and
-collaboration within the WikiProject Chemistry
-(\url{http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Chemistry}).
+collaboration within the WikiProject Chemistry~\cite{wikichem}.
 This project has many contributors and keeps track of the chemistry
 related pages in Wikipedia and has frequent discussions on how
 to improve the chemistry on these pages. Collaboration is organized
@@ -330,8 +261,9 @@ OpenTox provides an interoperable standard for the support of predictive toxicol
 including data management, and the specification of algorithms, modeling, validation and
 reporting. OpenTox takes advantage of other Open Standards for data representation,
 interfaces, vocabularies and ontologies: functionality is provided as REST~\cite{fielding:2000} services,
-and replies are provided in various formats, including Resource Description Framework [REF],
-the underlying technology of the Semantic Web [REF].
+and replies are provided in various formats, including Resource Description
+Framework~\cite{Carroll:04:RDF},
+the underlying technology of the Semantic Web~\cite{BernersLee2001}.
 
 \subsection{Data standardization and interoperability}
 
@@ -423,7 +355,7 @@ would identify the compound ID and retrieve the corresponding 3D
 structure (if available) from the Indiana University database and then
 display it in a Jmol window. Key to the functionality of many
 cheminformatics userscripts is the use of freely accessible
-cheminformatics web services (Section \ref{ref:ws}) and databases.
+cheminformatics web services (Section~\ref{ref:ws}) and databases.
 
 \section{Collaborative Computing}
 
@@ -593,7 +525,7 @@ and Bioclipse~\cite{Spjuth2009,Spjuth2007}.
 
 \ola{Add BSL script + more text about reproducibility}
 
-\begin{figure}
+\begin{figure}[bt]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphics/myexperiment.png}
 \end{center}
@@ -627,6 +559,16 @@ threading does alleviate this. Modern email systems such as
 Google Mail have provided a number of enhancements to improve the
 handling of multiple conversations in a mailing list. 
 
+XXXXXXXXXXXXXXX merge above and below paragraph
+
+Mailing lists have 
+traditionally been popular communication channels. A mailing
+list is a "collection of names and addresses used by an individual
+or an organization to send material to multiple recipients"~\cite{wp:mailinglist}
+and simplifies sending an email to a particular development or
+user community: by sending an email to the mailing list address
+it is automatically distributed the all participants.
+
 One important aspect of mailing lists is that they are not real time
 or interactive. On the other hand, messaging systems such as Internet
 Relay Chat (IRC) or instant messengers (Yahoo Chat, AOL, etc.) offer
@@ -648,6 +590,68 @@ project. Blogs are also useful from the consumers point of view since
 they are a \emph{pull} technology. That is, the consumer (i.e.,
 reader) will usually read the blog via an RSS reader and thus rather
 than receive updates from the blog, will read new posts when desired.
+
+One interesting aspect is that increasingly this communication
+is becoming more open and no longer limited to one project as
+it often the case for mailing lists. Many Open Source developers
+have started using blogs, where they discuss algorithms, theories,
+etc. Among those blogs are those of two of the authors of this
+chapter (see \url{http://blog.rguha.net/} and
+\url{http://chem-bla-ics.blogspot.com/}),
+but other blogs include the excellent one of
+Gilleain Torrance (\url{http://gilleain.blogspot.com/}),
+Noel O'Boyle (\url{http://baoilleach.blogspot.com/}), and
+Tim VanderMeersch (\url{http://timvdm.blogspot.com/}).
+
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{graphics/cb.png}
+\end{center}
+\caption{The Cheminformatics section of Chemical blogspace
+aggregates blog posts from cheminformaticians, providing
+a platform for discussion of algorithms, theory, within
+a larger community than that of a single project.}
+\label{fig:cb}
+\end{figure}
+
+Blog planets and aggregators play an important role here.
+Various cheminformatics projects have blog planets, where
+the blogs from developers and users from the community
+around that project are aggregated. For example, the
+Chemistry Development Kit and Bioclipse have planets
+at respectively \url{http://pele.farmbio.uu.se/planetcdk/} and
+\url{planet.bioclipse.net}.
+Aggregators also aggregate blogs, but not necessarily around
+a specific developer or user community. One such website
+that aggregates cheminformatics blogs is Chemical blogspace
+(see Figure~\ref{fig:cb}).
+
+A similar role is played by Question \& Answer websites, a new
+type of communication channel popularized by StackOverflow
+(\url{http://stackoverflow.com/}). This communication
+concept is used, for example, by a the Blue Obelisk
+eXchange at \url{http://blueobelisk.shapado.com/}
+(see Figure~\ref{fig:shapado}) where
+people can ask question on how to use a particular
+cheminformatics library, or how to solve a particular
+problem. These sites essentially extend the concept of Frequently
+Asked Question (FAQ) documents, except that they are grown and
+maintained by a community rather than a single person. In addition,
+novel mechanisms such as merit points and badges and the ability to
+up vote (or down vote) for answers provide a ``social incentive'' to
+the users of such sites to engage in the community (as opposed to
+simply taking information, a.k.a., leeching).
+
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/boShapado.png}
+\end{center}
+\caption{The Blue Obelisk eXchange Question \& Answer
+website is a open platform where people can ask on how
+to use cheminformatics software, or ask for solutions
+to a problem they have.}
+\label{fig:shapado}
+\end{figure}
 
 The technologies discussed so far have focused on communication
 between members of a collaboration and other interested parties. But
