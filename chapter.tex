@@ -330,9 +330,53 @@ Traditionally, linking databases is done by using shared identifiers.
 Well-known identifiers for chemical structures include the
 database-specific identifiers, such as the CAS registry number,
 PubChem Compound Identifier, and ChemSpider Compound Identifier.
+When these are shared, they can be used to connect databases.
+Alternatively, one could use an identifier which can be calculated
+from the object itself. For a wide set of small, organic molecules
+the InChI fulfills this role.
 
-Resource Description Framework ... HCLS, Bio2RDF, Chem2Bio2RDF,
-... \rg{It'd be useful to expand on this topics a little more}
+An interesting proposal was made with the Resource Description
+Framework~\cite{Carroll:04:RDF} which suggests the Universal
+Resource Identifier (URI)~\cite{rfc3986} to be used.
+Web addresses, such as \url{http://www.chemspider.com/}, are
+the most common URIs. The URI specification is an open
+standard that formalizes the structure of identifiers:
+an identifier consists of a scheme (\textit{http}),
+followed by a ':', and then an authority prefixed with
+"//" (\textit{//www.pharmbio.org}) and
+finally a path ('/'). An example of a URI that does not contain an authority,
+is the URI used in web pages to link to an email address, such as
+\href{mailto:bioclipse-devel@lists.sourceforge.net}, where the
+scheme is \textit{mailto}, and the path is the email address.
+Other URI is the Life Science Identifier (LSID)~\cite{Clark2004}.
+For example, The LSID for the 1AFT protein in the
+PDB database is \textit{urn:lsid:pdb.org:pdb:1aft}.
+
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{graphics/ons.pdf}
+\end{center}
+\caption{The rdf.openmolecules.net website operates as hub
+in the Semantic Web for small molecules by using the InChI
+to create unique molecular URIs to provide a dereferencable
+RDF resource for any compound.}
+\label{fig:ons}
+\end{figure}
+
+Using these URIs it is possible to make a Linked Open Data
+networks, linking together different databases on the
+Semantic Web. A subsection of this linked data network
+is created by the website \url{http://rdf.openmolecules.net/}
+which takes advantage of the InChI to create a network for
+small molecules. Figure~\ref{fig:ons} shows how this is used
+to create links to ChEBI, ChemSpider, NMRShiftDB and other
+resources~\cite{Willighagen2010jbiomedsem}. By taking
+advantage of such identifiers, the various participants
+can easily collaborate but work quite indenpendently at the
+same time. Other large initiatives in this area include
+the Semantic Web for Health Care and Life Sciences Interest Group of the
+World Wide Web consortium~\cite{hclsig},
+Bio2RDF~\cite{Belleau2008} and Chem2Bio2RDF~\cite{Chen2010}.
 
 Userscripts present an approach to linking resources with a very low
 barrier to entry. The idea of a userscript was first made available by
@@ -346,7 +390,7 @@ and linking web content to arbitrary data sources. A variety of
 userscripts for cheminformatics have been described by Willighagen et
 al~\cite{Willighagen2007b}. For example, when viewing a web page describing
 chemistry, a userscript can be written to take the text and run it
-through a chemical entity recognition tool (such as Oscar3~\cite{Corbett2006}) and
+through a chemical entity recognition tool (such as OSCAR3~\cite{Corbett2006}) and
 then highlight terms that were recognized. Such a script can be further
 enhanced by not only highlighting recognized terms, but inserting
 hyperlinks to chemical databases such as PubChem or

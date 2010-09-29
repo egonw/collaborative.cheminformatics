@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="ons.pdf"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <filter
+       inkscape:collect="always"
+       id="filter4847"
+       x="-0.11940163"
+       width="1.2388033"
+       y="-0.11294614"
+       height="1.2258923">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.08675"
+         id="feGaussianBlur4849" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4847-6"
+       x="-0.11940163"
+       width="1.2388033"
+       y="-0.11294614"
+       height="1.2258923">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.08675"
+         id="feGaussianBlur4849-8" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4847-9"
+       x="-0.11940163"
+       width="1.2388033"
+       y="-0.11294614"
+       height="1.2258923">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.08675"
+         id="feGaussianBlur4849-7" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="474.28575"
+     inkscape:cy="765.05938"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1198"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2385" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.47900391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 240.13099,180.95527 99.97749,130.03875"
+       id="path4966-7"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.47900391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 104.73984,409.86003 264.88104,-48.2115"
+       id="path4968-8"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.47900391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 379.09257,397.65687 99.9775,130.03876"
+       id="path4966"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.47900391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 380.62237,328.00723 473.25048,167.03488"
+       id="path4970"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"
+       inkscape:connector-curvature="0"
+       inkscape:connection-end-point="d4"
+       inkscape:connection-end="#g4925"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-start="#g4955" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.47900391;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 432.07694,341.29919 190.7285,-30.70892"
+       id="path4968"
+       inkscape:connector-type="polyline"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"
+       inkscape:connector-curvature="0"
+       inkscape:connection-end-point="d4"
+       inkscape:connection-end="#g4931"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-start="#g4955" />
+    <g
+       id="g4955"
+       transform="matrix(0.69039974,0,0,0.72663734,147.83703,154.05154)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546">
+      <path
+         transform="matrix(1.6513192,0,0,1.5136356,-218.14425,-163.91883)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4773"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4847)"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.7507073,0,0,1.6075892,-257.72935,-195.71902)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path2383"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <text
+         id="text4863"
+         y="281.95016"
+         x="254.17969"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="281.95016"
+           x="254.17969"
+           id="tspan4865"
+           sodipodi:role="line">R.O.N</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:28.3314724px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="506.00903"
+       y="315.69165"
+       id="text4875"
+       transform="scale(0.97474598,1.0259083)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"><tspan
+         sodipodi:role="line"
+         id="tspan4877"
+         x="506.00903"
+         y="315.69165" /></text>
+    <g
+       id="g4949"
+       transform="matrix(0.69039974,0,0,0.72663734,178.1175,195.92817)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546">
+      <path
+         transform="matrix(1.6513192,0,0,1.5136356,-90.875048,34.15511)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4899"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4847)"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.7507073,0,0,1.6075892,-130.46015,2.3549203)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4901"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <text
+         transform="scale(0.98846,1.0116747)"
+         id="text4903"
+         y="472.13968"
+         x="374.98044"
+         style="font-size:32.316185px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="472.13968"
+           x="374.98044"
+           id="tspan4905"
+           sodipodi:role="line">DBPedia</tspan></text>
+    </g>
+    <g
+       id="g4925"
+       transform="matrix(0.69039974,0,0,0.72663734,161.35065,93.160884)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546">
+      <path
+         transform="matrix(1.6513192,0,0,1.5136356,-83.73219,-334.37725)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4907"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4847)"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.7507073,0,0,1.6075892,-123.31729,-366.17744)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4909"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <text
+         transform="scale(0.98846,1.0116747)"
+         id="text4911"
+         y="107.86017"
+         x="402.65677"
+         style="font-size:32.316185px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="107.86017"
+           x="402.65677"
+           id="tspan4913"
+           sodipodi:role="line">ChEBI</tspan></text>
+    </g>
+    <g
+       id="g4931"
+       transform="matrix(0.69039974,0,0,0.72663734,155.43294,235.37419)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546">
+      <path
+         transform="matrix(1.6513192,0,0,1.5136356,141.46005,-332.53027)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4915"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4847)"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.7507073,0,0,1.6075892,101.87494,-364.33046)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4917"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <text
+         transform="scale(0.9435587,1.0598175)"
+         id="text4919"
+         y="83.333504"
+         x="637.61786"
+         style="font-size:28.2695694px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="83.333504"
+           x="637.61786"
+           id="tspan4921"
+           sodipodi:role="line">Chemical</tspan><tspan
+           id="tspan4923"
+           y="118.67046"
+           x="637.61786"
+           sodipodi:role="line">blogspace</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:19.45762444px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="453.02628"
+       y="404.5296"
+       id="text4978"
+       transform="scale(0.92576905,1.080183)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"><tspan
+         sodipodi:role="line"
+         id="tspan4980"
+         x="453.02628"
+         y="404.5296">InChI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:19.45762444px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="516.94843"
+       y="328.61078"
+       id="text4982"
+       transform="scale(0.92576905,1.080183)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"><tspan
+         sodipodi:role="line"
+         id="tspan4984"
+         x="516.94843"
+         y="328.61078">InChI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:19.45762444px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="473.58627"
+       y="245.3723"
+       id="text4986"
+       transform="scale(0.92576905,1.080183)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"><tspan
+         sodipodi:role="line"
+         id="tspan4988"
+         x="473.58627"
+         y="245.3723">ChEBI ID</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4847-6)"
+       id="path4915-4"
+       sodipodi:cx="324.28571"
+       sodipodi:cy="288.07648"
+       sodipodi:rx="50"
+       sodipodi:ry="52.857143"
+       d="m 374.28571,288.07648 a 50,52.857143 0 1 1 -100,0 50,52.857143 0 1 1 100,0 z"
+       transform="matrix(1.1400704,0,0,1.0998641,-244.64509,93.840645)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none"
+       id="path4917-3"
+       sodipodi:cx="324.28571"
+       sodipodi:cy="288.07648"
+       sodipodi:rx="50"
+       sodipodi:ry="52.857143"
+       d="m 374.28571,288.07648 a 50,52.857143 0 1 1 -100,0 50,52.857143 0 1 1 100,0 z"
+       transform="matrix(1.2086879,0,0,1.1681343,-271.97465,70.733435)" />
+    <text
+       xml:space="preserve"
+       style="font-size:20.02296257px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="67.658455"
+       y="382.35547"
+       id="text4919-1"
+       transform="scale(0.91973008,1.0872755)"><tspan
+         sodipodi:role="line"
+         x="67.658455"
+         y="382.35547"
+         id="tspan4923-9">ChemSpider</tspan></text>
+    <g
+       id="g4949-7"
+       transform="matrix(0.69039974,0,0,0.72663734,-72.194383,-164.96004)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546">
+      <path
+         transform="matrix(1.6513192,0,0,1.5136356,-90.875048,34.15511)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4899-6"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter4847-9)"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.7507073,0,0,1.6075892,-130.46015,2.3549203)"
+         d="m 374.28571,288.07648 c 0,29.19219 -22.38577,52.85714 -50,52.85714 -27.61424,0 -50,-23.66495 -50,-52.85714 0,-29.1922 22.38576,-52.85715 50,-52.85715 27.61423,0 50,23.66495 50,52.85715 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="50"
+         sodipodi:cy="288.07648"
+         sodipodi:cx="324.28571"
+         id="path4901-7"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.30871058;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.5;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <text
+         transform="scale(0.98846,1.0116747)"
+         id="text4903-3"
+         y="472.13968"
+         x="374.98044"
+         style="font-size:32.316185px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="472.13968"
+           x="374.98044"
+           id="tspan4905-6"
+           sodipodi:role="line">Bio2RDF</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:19.45762444px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="278.07364"
+       y="388.69543"
+       id="text4978-9"
+       transform="scale(0.92576905,1.080183)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"><tspan
+         sodipodi:role="line"
+         id="tspan4980-3"
+         x="278.07364"
+         y="388.69543">ChemSpider</tspan><tspan
+         sodipodi:role="line"
+         x="278.07364"
+         y="413.01746"
+         id="tspan3265">ID</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:19.45762444px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="230.99078"
+       y="261.30835"
+       id="text4986-9"
+       transform="scale(0.92576905,1.080183)"
+       inkscape:export-filename="/home/egonw/ons.png"
+       inkscape:export-xdpi="300.06546"
+       inkscape:export-ydpi="300.06546"><tspan
+         sodipodi:role="line"
+         id="tspan4988-0"
+         x="230.99078"
+         y="261.30835">ChEBI ID</tspan></text>
+  </g>
+</svg>
