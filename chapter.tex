@@ -525,7 +525,8 @@ Pilot, KNIME and Taverna~\cite{Oinn2004}.
 A recent development around workflow tools is the sharing of workflow
 specifications (or ``programs''), exemplified by the MyExperiment
 website~\cite{Goble2010} which allows sharing of scientific workflow
-of various formats, including Taverna (see Figure~\ref{fig:myexperiment})
+of various formats, including Taverna~\cite{Oinn2004,Kuhn2010}
+(see Figure~\ref{fig:myexperiment})
 and Bioclipse~\cite{Spjuth2009,Spjuth2007}.
 
 \ola{Add BSL script + more text about reproducibility}
@@ -535,13 +536,53 @@ and Bioclipse~\cite{Spjuth2009,Spjuth2007}.
 \includegraphics[width=0.8\textwidth]{graphics/myexperiment.png}
 \end{center}
 \caption{Screenshot of the MyExperiment.org web page for a
-Taverna workflow (\url{http://www.myexperiment.org/workflows/389.html}).}
+CDK-Taverna workflow (\url{http://www.myexperiment.org/workflows/389.html}).}
 \label{fig:myexperiment}
 \end{figure}
 
 \subsection{Online Cheminformatics Computation}
 
-XXXXX
+It should be noted that these online workflow sharing services do
+require you to download the workflows to your local desktop, where
+you can then run them. Both Taverna provide means to download a
+workflow from within the desktop software, but it is not possible
+to run the computation on the server.
+However, an ongoing evolution of collaborative cheminformatics
+is making this possible. Various vendors are appearing that make
+it possible to design and run workflows via websites.
+
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/wingu.png}
+\end{center}
+\caption{Screenshot of Wingu Elements, an online scientific
+computing platform with cheminformatics functionality.}
+\label{fig:wingu}
+\end{figure}
+
+One example of this approach is Wingu Elements, by the Boston start up
+Wingu Inc. This product provides a cloud-based platform for research teams
+to define workflows, share that within the collaboration, and
+share results~\cite{wingu}, as shown in Figure~\ref{fig:wingu}.
+
+A second online collaborative cheminformatics platform is the
+Inkspot Platform by Inkspot Science~\cite{inkspot}. On this platform
+workflows too can be designed, run, and shared (see
+Figure~\ref{fig:inkspot}). An extra dimension
+is given here by the company to provide hosting, allowing to create
+small communities or research projects, much like open source
+projects take advantage of hosting services like the aforementioned
+SourceForge and GitHub.
+
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/inkspot.png}
+\end{center}
+\caption{Screenshot of the Inkspot Platform for collaborative
+cheminformatics analyses.}
+\label{fig:inkspot}
+\end{figure}
+
 
 \section{Managing Collaborative Projects}
 
@@ -554,26 +595,22 @@ individuals, project management is not a significant problem, but it
 becomes much more problematic when the number of collaborators grows
 larger.
 
-The first aspect is communication between members of the
+The first aspect is communication between members within the
 collaboration. A number of mechanisms are available including mailing
 lists and online messaging systems. Both these methods have a long
 history and mailing lists are a useful way to broadcast messages to
-all members of a group. This has its downside as well, as many members
-may not desire such broadcasted messages. Furthermore, email is
+all members of a group~\cite{wp:mailinglist}:
+by sending an email to the mailing list address
+it is automatically distributed the all participants.
+This has its downside as well, as members
+may not desire such broadcasted messages which may not be
+relevant to them. Furthermore, email is
 relatively inefficient at handling multiple conversations, though
 threading does alleviate this. Modern email systems such as
 Google Mail have provided a number of enhancements to improve the
-handling of multiple conversations in a mailing list. 
-
-XXXXXXXXXXXXXXX merge above and below paragraph
-
-Mailing lists have 
-traditionally been popular communication channels. A mailing
-list is a "collection of names and addresses used by an individual
-or an organization to send material to multiple recipients"~\cite{wp:mailinglist}
-and simplifies sending an email to a particular development or
-user community: by sending an email to the mailing list address
-it is automatically distributed the all participants.
+handling of multiple conversations in a mailing list, such as
+automatic filtering of messages to mailing lists directly into
+a folder, instead of the main inbox.
 
 One important aspect of mailing lists is that they are not real time
 or interactive. On the other hand, messaging systems such as Internet
