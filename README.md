@@ -1,7 +1,7 @@
 Ch. X: Collaborative Cheminformatics Applications
 ------------------------------------------
 
-R. Guha & E. Willighagen
+R. Guha, O. Spjuth & E. Willighagen
 
 Book chapter on using collaborative forces in cheminformatics.
 
