@@ -24,16 +24,15 @@ Rajarshi Guha, Ola Spjuth, Egon Willighagen
 \end{LARGE}
 \vspace{1.5cm}
 
-Cheminformatics is the science of chemical data and computations applied to such
-data.  The
+Cheminformatics is the science of chemical data and computation.  The
 origin of the data is the wet lab, making collaboration an intrinsic
 part of cheminformatics. Most cheminformatics methodologies are
-developed using experimental data, attempting to find patterns at various
+developed using experimental data, finding patterns of various
 levels. These metadologies are typically mathematical and are
-actually aimed at finding correlations, and not necessarily physical and chemical
+actually aimed at finding correlation, not physical and chemical
 cause-effect relations. Therefore, the field finds itself once
 again collaborating with the experimental scientist to validate
-the predictions it came up with, against new experimental data.
+the predictions it came up with against new experimental data.
 
 However, as the field matured it became more specialized,
 and with more specialization the nature of those collaborations
@@ -63,9 +62,9 @@ cheminformatics applications: code development, knowledge handling
 and data exchange, and collaborative computation.
 
 The first section will focus on methods involved in the collaborative
-development of cheminformatics software, and discuss the tools available to modern
-scientists to perform this task. The next section will describe
-recent changes in how we handle chemical data and knowledge, and in
+development of cheminformatics software, and discuss the tools modern
+scientists have to perform this task. The next section will describe
+recent changes in which we handle chemical data and knowledge, and in
 particular how the Internet is changing the way communities create new
 knowledge bases. The third section will focus on the aspects of
 collaborative computing in cheminformatics. Finally, the fourth
@@ -301,6 +300,17 @@ but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar
 possibly triggered by the open eXtensible Markup Language (XML)~\cite{Bray:08:EML}
 and and Web Ontology Language (OWL) standards~\cite{Group:09:OWO}.
 
+\begin{figure}[bt]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/qsar-collab.png}
+\end{center}
+\caption{Screenshot showing the creating of a QSAR data set in Bioclipse,
+where a set of molecules is aggregated and molecular descriptors are
+selected, creating a numerical representation suitable for statistical
+modeling.}
+\label{fig:qsarml}
+\end{figure}
+
 Ongoing community efforts to define ontologies related to cheminformatics include
 the OpenTox API mentioned earlier, the Blue Obelisk Descriptor Ontology, and the
 Chemical Information Ontology, a cheminformatics-oriented ontology
@@ -314,7 +324,8 @@ uniquely defining descriptors. Also included is support for multiple versioned
 implementations of these descriptors, which could be available on the local computer
 or via remote Web services. QSAR-ML also comes with a reference implementation for
 the Bioclipse workbench~\cite{Spjuth2009,Spjuth2007}, which provides a graphical
-interface for setting up QSAR data sets. Prominent features include adding and
+interface for setting up QSAR data sets, as shown in Figure~\ref{fig:qsarml}.
+Prominent features include adding and
 normalizing chemical structures in various formats, cherry-picking local and
 remote descriptor implementations, adding responses and metadata, and finally
 performing all calculations and exporting the complete data set in QSAR-ML.
