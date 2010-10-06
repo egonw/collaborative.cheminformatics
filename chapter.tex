@@ -465,20 +465,22 @@ collaborative computing in more detail.
 \label{ref:ws}
 
 Distributed computing has gone through many phases starting with
-Remote Procedure Calls (RPC) in the 1970a and 1980s to CORBA in the
-1990s. More recently, distributed computing in the form of web
-services have become a mechanism by which different groups expose both
-methods (analogous to remote function calls that are the hallmark of
-RPC and CORBA) as well as data. In this sense, we consider web
-services to be a generalization, allowing one to provide access both
-data (such as databases) and algorithms.
+Remote Procedure Calls (RPC)~\cite{rfc707} in the 1970s-80s to
+CORBA~\cite{url:corba1.0} in the
+1990s. More recently, distributed computing in the form of so-called
+web services have emerged. Because these services expose methods,
+like RPC and CORBA, but also data, we consider web
+services to be a generalization, allowing one to provide access to
+both data (contained in databases) as well as algorithms.
 
-There are many protocols by which web services are based upon, such as SOAP, REST and
+There are many protocols on which web services can be based.
+These include SOAP~\cite{Gudgin:07:SVP},
+REST~\cite{fielding:2000} and
 XMPP~\cite{Wagener2009}. Most web service protocols are designed to
 work with multiple types of transport layers (HTTP, UDP, etc) but the
 majority of web service protocols currently in use work over
-HTTP. This approach results in significantly easier deploy of services
-and access to them, since HTTP is ubiquitous throughout the
+HTTP. This approach results in significantly easier deployment and
+access of services since HTTP is ubiquitous across the
 Internet. For a more detailed review of web service technologies the
 reader is referred to Curcin et al\cite{Curcin:2005fk} and Fielding et
 al\cite{Fielding:2002eu}.
@@ -488,17 +490,16 @@ services and some use cases highlighting the collaborative potential
 of such web services.
 
 Indiana University has developed a number of cheminformatics web
-services\cite{Dong2007Web} that provide access to core cheminformatics methods
+services~\cite{Dong2007Web} that provide access to core cheminformatics methods
 (fingerprints, 2D depiction and various molecular descriptors),
 statistical techniques (using R\cite{r} as the backend) and chemical
 database access methods. Most of these services are implemented in
 Java using the Chemistry Development Kit~\cite{Steinbeck2003} and SOAP as the
-underlying protocol. A detailed description of these services can be
-found in Dong et al~\cite{Dong2007Web}. The services have been used in
+underlying protocol. The services have been used in
 a variety of scenarios. For example, the fingerprint and statistical
 model services were employed by Indiana University to develop
 models to predict the activity of user supplied compounds against the
-NCI60 cancer cell lines. Interestingly, the final predictive model was
+NCI60 cancer cell lines~\cite{Dong2007Web}. Interestingly, the final predictive model was
 itself, converted to a web service and thus accessible by any SOAP client,
 remote or local. Note that while the model service was also located at
 Indiana University, it could easily make use of fingerprint services
@@ -510,10 +511,11 @@ REST interface, the reimplementation avoids the extra complexity
 imposed by SOAP, by directly exposing the functionality via the REST
 interface. These services can be found at
 \url{http://rguha.net/rest}. Currently, the
-services are hosted at multiple locations include Drexel University,
-USA and Uppsala University, Sweden and are utilized by a number of
+services are hosted at multiple locations and include Drexel University,
+USA and Uppsala University, Sweden, and are utilized by a number of
 independent applications. An example is the use of these services to
-enhance an Open Notebook Science (ONS) project~\cite{Bradley2009}. The ONS Solubility
+enhance an Open Notebook Science (ONS) project~\cite{Bradley2009},
+as reviewed elsewhere in this book. The ONS Solubility
 Challenge is an ongoing project in which a number of research groups
 have experimentally determined the solubility of a variety of solutes
 in a variety of solvents. All the data generated as part of this
@@ -531,17 +533,16 @@ unwieldy to explore. In general, while numeric solubility data is
 useful it is more appropriate to explore it from a chemical point of
 view - that is, in terms of structures and substructures.
 
-As a result, a simple web page interface
-(\url{http://toposome.chemistry.drexel.edu/~rguha/jcsol/sol.html})
-was developed that extract data from the Google spreadsheet via the
-Google-provided Data API and presented the data or filtered subsets of
+As a result, a simple web page interface was developed~\cite{url:onsgui}
+that extract data from the Google spreadsheet via the
+Google-provided Data API and presents views of the data or filtered subsets of
 the data (based on solute or solvent identifiers, substructures or
 solubility ranges). The key feature of this application is the
 incorporation of chemical intelligence, by making use of
 cheminformatics web services hosted at Uppsala University. By making
-use of these services, the SMILES strings stored in the spreadsheet
+use of these services, the SMILES strings~\cite{Weininger1988} stored in the spreadsheet
 could be filtered by the presence or absence of substructures
-(specified via SMARTS). In addition, the services were also employed
+(specified via SMARTS~\cite{url:smarts}). In addition, the services were also employed
 to provide 2D structure depictions of the results matching satisfying
 the query. From a collaborative point of view, this application is
 interesting as the developer had no role in the gathering of the
@@ -551,15 +552,15 @@ public web services hosted at another, remote location to extract and
 present data that satisfied the requirements of another, external
 group (i.e., the experimentalists making the measurements).
 
-A related application (\url{http://old.oru.edu/cccda/sl/descriptorspace/ds.php}) 
-was developed by another researcher to
-explore the chemical space (via descriptor calculations followed by
-principal components analysis). This application also made use of the
+A related application was developed by another researcher to
+explore the chemical space via descriptor calculations followed by
+principal components analysis~\cite{url:descriptorspace}.
+This application also made use of the
 cheminformatics services hosted at Drexel University as well as
 visualization services provided by Google, allowing users to generate
-principal component plots of the solubility data, thereby
+principal component plots of the solubility data and thereby
 understanding the extent of the chemical space occupied by the current
-set of chemical.
+set of chemicals.
 
 These applications highlight the fact that distributed software
 resources were key in allowing multiple, unrelated parties to
