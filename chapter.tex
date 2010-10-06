@@ -277,38 +277,40 @@ the underlying technology of the Semantic Web~\cite{BernersLee2001}.
 
 \subsection{Data standardization and interoperability}
 
-Sharing of information and data requires well developed standards and exchange formats.
+Sharing of information and data requires well developed standards and
+exchange formats as discussed in Chapter 14.
 An example in cheminformatics is the extensible Chemical Markup Language
 (CML)~\cite{MurrayRust1999} which
 is an approach to manage primarily molecular data, which has been extended to also
-comprise other entities, including reactions and spectra. Another example is HUPO-PSI
+comprise other entities, including reactions and spectra. Another example is the HUPO-PSI
 Molecular Interaction format for the representation of molecular interaction
 data~\cite{Orchard:2010uq}. The advantage of standardized file formats is that
 applications can share information without loss of data, and it is becoming
-increasingly common that data must be deposited in public repositories in an
+increasingly common that data must be deposited in public repositories in
 open exchange formats prior to publication in scientific journals.
 
 The cheminformatics community is slowly moving towards a more classical
-standardization of knowledge: the use of ontologies. Ontologies are a formal
+standardization of knowledge: the use of ontologies. Ontologies are formal
 representations that are used to define concepts and their relationships in a
 specific domain. By explicitly defining what a term means, it defines how
 it should be used. Likewise, knowledge expressed with terms defined in
-ontologies is more precise as anyone can look up what the exact meaning is.
+ontologies is more precise as others can then look up what the exact meaning is.
 
-There are various levels of detail an ontology can have, and in its most
-simple form, the ontology is a controlled vocabulary, such as the IUPAC
-Gold Book (\url{http://goldbook.iupac.org/}), which specifies chemical terminology.
-More detailed ontologies, as those used by the knowledge management community,
-define terms in much more detail, identifying classes, hierarchy of classes
-(for example used by the Gene Ontology~\cite{GO2008,GO2010}), and relations
+There are various levels of detail in ontology and in its most
+simple form, the ontology is a controlled vocabulary. An example is the IUPAC
+Gold Book~\cite{url:goldbook}, which specifies chemical terminology.
+More detailed ontologies, such as those used by the knowledge management community,
+define terms in much more detail, identifying classes, the hierarchy of classes
+(for example used by the Gene Ontology~\cite{GO2008,GO2010}), and relationships
 between classes. For example, a chemical ontology can specify what a \textit{molecule}
-is, and that it is subclass of \textit{chemical entities}, and that a molecule can have
-a \textit{boiling point}, and that a boiling point is a \textit{physical property of a chemical
-entity}. These are the kind facts expressed in domain ontologies.
-Ontologies have been used in chemistry since at least the 80-ties~\cite{Gordon1983},
+is, and that it is a subclass of \textit{chemical entities}, and that a molecule can have
+a \textit{boiling point}, and that a boiling point is a \textit{physical property of
+a chemical entity}. These are representative of the type of facts
+that are expressed in domain ontologies.
+Ontologies have been used in chemistry since at least the 1980s~\cite{Gordon1983},
 but have received renewed interest lately~\cite{Feldman2005,Dumontier2009,Sankar2010},
 possibly triggered by the open eXtensible Markup Language (XML)~\cite{Bray:08:EML}
-and and Web Ontology Language (OWL) standards~\cite{Group:09:OWO}.
+and the Web Ontology Language (OWL) standards~\cite{Group:09:OWO}.
 
 \begin{figure}[bt]
 \begin{center}
@@ -323,14 +325,13 @@ modeling.}
 
 Ongoing community efforts to define ontologies related to cheminformatics include
 the OpenTox API mentioned earlier, the Blue Obelisk Descriptor Ontology, and the
-Chemical Information Ontology, a cheminformatics-oriented ontology
-(\url{http://code.google.com/p/semanticchemistry/}). Another ontology
-recently introduced to simplify building knowledge bases, is
+Chemical Information Ontology, a cheminformatics-oriented ontology~\cite{url:cheminf}. 
+Another ontology recently introduced to simplify building knowledge bases, is
 the open exchange format QSAR-ML~\cite{Spjuth:2010fk} which aims at representing data sets
 for Quantitative Structure-Activity Relationships (QSAR) in an open and completely
 reproducible way. In QSAR, chemical structures are described by numerical vectors
-(descriptors), and QSAR-ML makes use of the Blue Obelisk Descriptor Ontology for
-uniquely defining descriptors. Also included is support for multiple versioned
+(known as descriptors), and QSAR-ML makes use of the Blue Obelisk Descriptor Ontology for
+uniquely defining these descriptors. Also included is support for multiple, alternative
 implementations of these descriptors, which could be available on the local computer
 or via remote Web services. QSAR-ML also comes with a reference implementation for
 the Bioclipse workbench~\cite{Spjuth2009,Spjuth2007}, which provides a graphical
@@ -340,22 +341,24 @@ normalizing chemical structures in various formats, cherry-picking local and
 remote descriptor implementations, adding responses and metadata, and finally
 performing all calculations and exporting the complete data set in QSAR-ML.
 Standardized QSAR opens up new ways to store, query, and exchange analysis,
-and makes it is easy to join, extend, combine and also to work collectively with data.
+and makes it easy to join, extend, combine and to work collectively with data.
 
 
 
 \subsection{Linking Knowledge Bases}
 
-Key to collaboration is also the sharing of knowledge. A prominent role here
-plays the linking of various databases, which allows integration of them.
+One of the keys to collaboration is also the sharing of knowledge.
+A prominent role here is in the linking of various databases,
+thereby allowing their integration and, where appropriate, their federation.
 Traditionally, linking databases is done by using shared identifiers.
-Well-known identifiers for chemical structures include the
-database-specific identifiers, such as the CAS registry number,
-PubChem Compound Identifier, and ChemSpider Compound Identifier.
+Well-known identifiers for chemical structures include
+database-specific identifiers, such as the CAS registry number~\cite{url:casnumber},
+the PubChem Compound Identifier~\cite{url:pubchemcid},
+and the ChemSpider Identifier~\cite{url:chemspider}.
 When these are shared, they can be used to connect databases.
 Alternatively, one could use an identifier which can be calculated
 from the object itself. For a wide set of small, organic molecules
-the InChI fulfills this role.
+the InChI~\cite{Stein2003} fulfills this role~\cite{Coles2005}.
 
 An interesting proposal was made with the Resource Description
 Framework~\cite{Carroll:04:RDF} which suggests the Universal
