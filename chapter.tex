@@ -216,7 +216,7 @@ regarding a parameter description missing in the JavaDoc
 \includegraphics[width=0.8\textwidth]{graphics/kalzium.png}
 \end{center}
 \caption{Screenshot of the Kalzium, part of the KDE Software
-Compilation (\url{http://kde.org/}), showing information on the
+Compilation, showing information on the
 isotopes of cobalt using the Blue Obelisk Data Repository.}
 \label{fig:kalzium}
 \end{figure}
@@ -233,17 +233,19 @@ atom in common, etc.
 
 The collaborative building of knowledge bases is now well-established,
 with popular examples in chemistry including compound databases
-like PubChem and ChemSpider where people can deposit chemical
-structures.
+like PubChem~\cite{url:pubchem} and ChemSpider~\cite{url:chemspider}
+where people can deposit chemical structures.
 Social sites to share Open Data include the
-NMRShiftDB~\cite{Steinbeck2004} (GNU FDL license),
-ChemPedia~\cite{chempedia} (CC0 license),
-and the Blue Obelisk Data Repository is a collaborative project by a number
-of cheminformatics tools~\cite{Guha2006}, including Kalzium (see Figure~\ref{fig:kalzium}),
+NMRShiftDB~\cite{Steinbeck2004} (licensed under a GNU FDL license),
+ChemPedia~\cite{chempedia} (available under a CC0 license),
+and the Blue Obelisk Data Repository which is a collaborative project
+initiated by a number
+of cheminformatics tools~\cite{Guha2006}, including Kalzium~\cite{url:kalzium}
+(see Figure~\ref{fig:kalzium}),
 the Chemistry Development Kit, and others.
 However, it should be noted that these collaborative, Open Data
 resources are small in size, and that the collaborating community
-is not (yet) of critical mass.
+is not, as yet, of critical mass.
 
 \begin{figure}[bt]
 \begin{center}
@@ -254,7 +256,7 @@ editing of chemical articles on Wikipedia.}
 \label{fig:wikichem}
 \end{figure}
 
-Wikipedia, instead, has an active development community and
+In contrast, Wikipedia has an active development community and
 collaboration within the WikiProject Chemistry~\cite{wikichem}.
 This project has many contributors and keeps track of the chemistry
 related pages in Wikipedia and has frequent discussions on how
@@ -262,13 +264,14 @@ to improve the chemistry on these pages. Collaboration is organized
 via a project wiki page that can be edited by all contributors
 (see Figure~\ref{fig:wikichem}).
 
-The toxicology community, at the same time, is also bootstrapping
+The toxicology community has bootstrapped
 a community effort to share knowledge around the OpenTox Open Standard~\cite{Hardy2010}.
 OpenTox provides an interoperable standard for the support of predictive toxicology,
 including data management, and the specification of algorithms, modeling, validation and
 reporting. OpenTox takes advantage of other Open Standards for data representation,
-interfaces, vocabularies and ontologies: functionality is provided as REST~\cite{fielding:2000} services,
-and replies are provided in various formats, including Resource Description
+interfaces, vocabularies and ontologies: functionality is provided as
+RESTful services~\cite{fielding:2000},
+and replies are provided in various formats, including the Resource Description
 Framework~\cite{Carroll:04:RDF},
 the underlying technology of the Semantic Web~\cite{BernersLee2001}.
 
