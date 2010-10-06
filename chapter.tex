@@ -102,12 +102,12 @@ open source repository technologies available, including the Concurrent Versions
 Bazaar~\cite{url:bazaar}, and Git~\cite{url:git}. CVS is the oldest and mostly replaced
 by the newer technologies. Subversion is still abundant, but increasingly
 replaced by the last three technologies. The reason for this is that
-those three are distributed technologies, allowing for server redundancy.
+the latter three system are distributed technologies, allowing for server redundancy.
 
 Moreover, because of the distributed nature of Mercurial, Bazaar, and Git,
 branching and merges of branches is often easier. However, the increased
 functionality also introduces further complexity, which is particularly
-the case for Git, leading to a steeper learning curve.
+the case for Git, and leads to a steeper learning curve.
 
 As these tools are Open Source, anyone is able to set up a local,
 possibly private server, but
@@ -144,12 +144,13 @@ contributor under those license terms.
 There are various Open Source licenses available, with
 different characteristics. A discussion on differences and
 details is well beyond the scope of this chapter, however.
-They reader is kindly invited to read the book
-Open Source Licensing by Lawrence Rosen~\cite{Rosen2004}.
+The reader is encouraged to read the book
+Open Source Licensing by Lawrence Rosen~\cite{Rosen2004}
+to gain additional information in this area.
 Popular Open Source licenses include the GPL
-licenses, and the MIT and BSD licenses. A full overview of Open
-Source licenses is available from the Open Source Initiative:
-\url{http://www.opensource.org/licenses}.
+licenses~\cite{url:license:lgpl,url:license:gpl}, and
+the MIT~\cite{url:license:mit} and BSD licenses~\cite{url:license:bsd}. A full overview of Open
+Source licenses is maintained by the Open Source Initiative~\cite{url:osi}.
 
 \subsection{Peer review}
 
@@ -159,34 +160,35 @@ need to be discussed, and solutions proposed. Peer review
 is part of this, and plays an important part in collaborative
 code development. A full discussion of communication
 will be discussed later in this chapter as part of project
-management, and here we will focus on peer review only.
+management, while here we will focus on peer review only.
 
 While the role of peer review in scientific publishing is
 well recognized as an important path for communication, it is rarely
 applied to scientific programming. Nevertheless, the
-advantages are clearly recognized, such as written up
-in the famous writing \textit{The Cathedral and the Bazaar}~\cite{Raymond2001}:
+advantages and disadvantages are clearly recognized for source
+code development as well, as detailed in
+in the famous article titled "The Cathedral and the Bazaar"~\cite{Raymond2001}:
 
 \begin{quotation}
-It's one thing to observe in the large that the bazaar style
+"It's one thing to observe in the large that the bazaar style
 greatly accelerates debugging and code evolution. It's
 another to understand exactly how and why it does so at the
-micro-level of day-to-day developer and tester behavior.
+micro-level of day-to-day developer and tester behavior."
 \end{quotation}
 
-The section then details on why the Bazaar model, with many
-people looking at the code actually works. Now, interestingly,
-this is where it may not apply to cheminformatics, where
-the number of potential people looking at the code is
+The article continues to detail why the Bazaar model, with many
+people looking at the code actually works. Interestingly,
+this is where it may not directly apply to cheminformatics as
+the number of potential people looking at the code is actually
 relatively low. Moreover, developers from competing projects
-may have additional reasons not to review work from other
+may have additional reasons not to review the work from other
 projects, further reducing the number of reviewers. 
 It should be noted that this problem is general to science,
 and that peer review of publications too typically requires
 a more formal approach. Peer reviewed code development 
 has the advantage
 that static source code checkers are available that can
-detect common problems, such as PMD (\url{http://pmd.sf.net/}).
+detect common problems, such as PMD~\cite{url:pmd}.
 These tools check, for example, for unused variables, dead
 code, etc, often highlighting sources of problems.
 
@@ -195,7 +197,7 @@ tools. For example, GitHub provides the functionality to
 comment on changes~\cite{Chemblaics201005CodeReview},
 increasing the communication between developers and the
 social pressure to write better source code.
-Figure~\ref{fig:githubCodereview} show an example comment
+Figure~\ref{fig:githubCodereview} shows an example comment
 made via the GitHub website.
 
 \begin{figure}[bt]
@@ -225,8 +227,8 @@ Cheminformatics is, of course, very much about information. This
 information is embedded in knowledge bases, such as relational databases.
 The knowledge in these information resources is derived from experimental
 data. For example, force fields, which are used to calculate energies
-for molecular conformations, are based on common patters, such as
-average bond lengths, angles between two bonds that have one
+for molecular conformations, are based on common patterns, such as
+average bond lengths, the angles between two bonds that have one
 atom in common, etc.
 
 The collaborative building of knowledge bases is now well-established,
