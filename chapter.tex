@@ -361,10 +361,11 @@ from the object itself. For a wide set of small, organic molecules
 the InChI~\cite{Stein2003} fulfills this role~\cite{Coles2005}.
 
 An interesting proposal was made with the Resource Description
-Framework~\cite{Carroll:04:RDF} which suggests the Universal
-Resource Identifier (URI)~\cite{rfc3986} to be used.
-Web addresses, such as \url{http://www.chemspider.com/}, are
-the most common URIs. The URI specification is an open
+Framework~\cite{Carroll:04:RDF} which suggests that a Universal
+Resource Identifier (URI)~\cite{rfc3986} is used to identify
+information in a database. Common URIs include web addresses,
+such as \url{http://www.chemspider.com/}.
+The URI specification is an open
 standard that formalizes the structure of identifiers:
 an identifier consists of a scheme (\textit{http}),
 followed by a ':', and then an authority prefixed with
@@ -373,9 +374,12 @@ finally a path ('/'). An example of a URI that does not contain an authority,
 is the URI used in web pages to link to an email address, such as
 \href{mailto:bioclipse-devel@lists.sourceforge.net}, where the
 scheme is \textit{mailto}, and the path is the email address.
-Other URI is the Life Science Identifier (LSID)~\cite{Clark2004}.
+Other URIs include the Life Science Identifier (LSID)~\cite{Clark2004}.
 For example, The LSID for the 1AFT protein in the
-PDB database is \textit{urn:lsid:pdb.org:pdb:1aft}.
+PDB database is \textit{urn:lsid:pdb.org:pdb:1aft}. The \textit{urn}
+scheme in the LSID refers to the Uniform Resource Names (URNs)
+specification which is based on the URI, but aimed at being
+location independent~\cite{rfc2141}.
 
 \begin{figure}[bt]
 \begin{center}
@@ -388,13 +392,14 @@ RDF resource for any compound.}
 \label{fig:ons}
 \end{figure}
 
-Using these URIs it is possible to make a Linked Open Data
-networks, linking together different databases on the
+Using these URIs it is possible to create a Linked Open Data
+network, linking together different databases on the
 Semantic Web. A subsection of this linked data network
 is created by the website \url{http://rdf.openmolecules.net/}
 which takes advantage of the InChI to create a network for
 small molecules. Figure~\ref{fig:ons} shows how this is used
-to create links to ChEBI, ChemSpider, NMRShiftDB and other
+to create links to ChEBI~\cite{Degtyarenko2008}, ChemSpider,
+NMRShiftDB~\cite{Steinbeck2003b} and other
 resources~\cite{Willighagen2010jbiomedsem}. By taking
 advantage of such identifiers, the various participants
 can easily collaborate but work quite independently at the
@@ -403,14 +408,16 @@ the Semantic Web for Health Care and Life Sciences Interest Group of the
 World Wide Web consortium~\cite{hclsig},
 Bio2RDF~\cite{Belleau2008} and Chem2Bio2RDF~\cite{Chen2010}.
 
-Userscripts present an approach to linking resources with a very low
+Userscripts also present an approach to linking resources with a very low
 barrier to entry. The idea of a userscript was first made available by
-the Greasemonkey Mozilla extension and later by Ubiquity Mozilla
-extension. A userscript was simply a small JavaScript program that
+the Greasemonkey Mozilla extension~\cite{url:greasemonkey} and
+later by the Ubiquity Mozilla extension~\cite{url:ubiquity}.
+A userscript is simply small JavaScript program that
 runs on the client browser and can modify a given web page before it
 is displayed to the viewer. In other words, given permission to do so,
-a userscript can completely rewrite a web page in any way it sees
-fit. This opens up exciting possibilities in annotating web content
+a userscript can completely rewrite a web page in any way
+deemed appropriate and necessary to the task at hand.
+This opens up exciting possibilities in annotating web content
 and linking web content to arbitrary data sources. A variety of
 userscripts for cheminformatics have been described by Willighagen et
 al~\cite{Willighagen2007b}. For example, when viewing a web page describing
@@ -420,10 +427,10 @@ then highlight terms that were recognized. Such a script can be further
 enhanced by not only highlighting recognized terms, but inserting
 hyperlinks to chemical databases such as PubChem or
 ChemSpider. Another userscript application described, is to
-display 3D structures of molecules when browsing PubChem web pages. In
-the past, PubChem did not provide 3D structure information. On the
-other hand, Indiana University had generated a single low energy
-conformer for 99\% of PubChem and stored them in a database. A
+display the 3D structures of molecules when browsing PubChem web pages.
+Previously, PubChem had not provided 3D structure information, while
+Indiana University had separately generated a single low energy
+conformer for 99\% of PubChem and stored them in an independent database. A
 userscript was implemented that when run on a PubChem compound page,
 would identify the compound ID and retrieve the corresponding 3D
 structure (if available) from the Indiana University database and then
@@ -433,7 +440,7 @@ cheminformatics web services (Section~\ref{ref:ws}) and databases.
 
 \section{Collaborative Computing}
 
-The development of infrastructure and tools to link knowledge bases is
+The development of the necessary infrastructure and tools to link knowledge bases is
 a fundamental requirement for efficient collaborations. The previous
 sections have highlighted a variety of efforts in these areas. While
 it is true that collaborative efforts (in any field) are primarily a
@@ -449,8 +456,8 @@ shared specifications.That is, individuals could collaborate on the
 specification of a process or program, which would then be run locally
 using each collaborators own resources. Finally, to achieve these
 types of collaborative efforts, technologies to support these are
-necessary; many of these are well established such as mailing lists
-and chat systems, whereas a number are more recent such as service
+necessary. Many of these are well established including mailing lists
+and chat systems, whereas a number are more recent and include service
 registries. The following subsections discuss these facets of
 collaborative computing in more detail.
 
