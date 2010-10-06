@@ -25,76 +25,81 @@ Rajarshi Guha, Ola Spjuth, Egon Willighagen
 \vspace{1.5cm}
 
 Cheminformatics is the science of chemical data and computation.  The
-origin of the data is the wet lab, making collaboration an intrinsic
-part of cheminformatics. Most cheminformatics methodologies are
-developed using experimental data, finding patterns of various
-levels. These methodologies are typically mathematical and are
-actually aimed at finding correlation, not physical and chemical
-cause-effect relations. Therefore, the field finds itself once
+origin of the data is generally from the wet lab,
+thereby making collaboration an intrinsic part of cheminformatics:
+data aggregation, preprocessing, and review involves many other
+scientists. Moreover, as most cheminformatics approaches find
+patterns and relationsips at various levels of detail, using
+methodologies are typically mathematical and are
+aimed at identifying correlations, not physical and chemical
+cause-effect relations, the domain finds itself once
 again collaborating with the experimental scientist to validate
-the predictions it came up with against new experimental data.
+the derived models and predictions against new experimental data.
 
-However, as the field matured it became more specialized,
-and with more specialization the nature of those collaborations
-changed: collaboration could have started as a lab scientist doing
-cheminformatics on the side, after which it evolved to people
+However, as the field has matured it has become more specialized,
+and with more specialization, the nature of those collaborations
+have changed: a study could have started as a lab scientist doing
+cheminformatics as a side project, while the domain later evolved to people
 specializing in cheminformatics while collaborating with other
-scientists in the same group, and later in other groups. Nowadays, it
-is no longer uncommon to collaborate with scientists around the world,
-as even the same university may no longer share the same
-specialism. This is the era of online science.
+scientists in the same group, and later collaborating with other
+resarch groups. Nowadays, it is even ccommon to collaborate with
+scientists around the world as even the same university may no
+longer share the same speciality. Evolution of internet technologies
+resulted in an era of online science.
 
 Fortunately, cheminformatics is at an advantage compared to
-other sciences, as the data exchange, processing, and analysis
-is all done electronically anyway, making it suitable to be
-scaled up to science online. This chapter will detail the
+other sciences. Data exchange, processing, and analysis
+is all done electronically, making it suitable to be
+scaled up to science online. This chapter will define and detail the
 various tools cheminformaticians have at hand to simplify
 this online collaboration.
 
 Cheminformatics deals with the aggregation, handling, processing, and
 analysis of chemical data. The nature of the chemical data is in principle
-not important, but the history of the field and its separation from
-quantum chemistry fields, bias the field towards small organic molecules.
-The patterns in collaborative applications are, however, independent from
+not important. However, the history of the field and its separation from
+quantum chemistry fields, bias the domain towards small organic molecules.
+The patterns in collaborative applications are, however, independent of
 the exact nature of the data. Therefore, we will focus in this chapter
 on another dimension to discuss the aspects of collaborative
 cheminformatics applications: code development, knowledge handling
 and data exchange, and collaborative computation.
 
 The first section will focus on methods involved in the collaborative
-development of cheminformatics software, and discuss the tools modern
+development of cheminformatics software, and will discuss the tools modern
 scientists have to perform this task. The next section will describe
 recent changes in which we handle chemical data and knowledge, and in
-particular how the Internet is changing the way communities create new
+particular how the internet is changing the way communities create new
 knowledge bases. The third section will focus on the aspects of
 collaborative computing in cheminformatics. Finally, the fourth
 section will describe social aspects of collaborative projects, and in
 particular how collaboration is managed in projects with only loosely
-defined roles of the various partners.
+defined roles for the various partners.
 
 \section{Collaborative Code Development}
 
 Collaborative code development is a common approach for large software vendors.
-For scientific software, however, it is more uncommon: new software is typically
-started as a PhD or M.Sc. project, with a single developer. There are, though,
+For scientific software, however, it is less common: new software is typically
+started as a PhD or M.Sc. project, with a single developer. There are, however,
 two areas where collaborative code development in cheminformatics flourishes:
 one situation is where a piece of software has become large and successful,
 and multiple people have interest in contributing to the project; the second
 situation is where the project is fairly small, and no single developer can
-or wants to lead the project, as the topic is not core business.
+or wants to lead the project, as the topic is not core to their research.
 
-An example of the latter situation is the JChemPaint project. There are existing
-similar projects, making continued development out of scope of cheminformatics
+An example of the latter situation is the JChemPaint project~\cite{Krause2000}.
+There are existing similar projects, making continued development out
+of the scope of cheminformatics
 research. However, Steinbeck et al. showed in 1998 that a collaborative project
 can lead to an ecosystem where such software can still be
-developed~\cite{Krause2000}.
+developed.
 
 Central to collaborative code development is the sharing of source code. Particularly,
-it is pipelining how patches are shared and applied. While some cheminformatics
+it is the pipelining of how patches are shared and applied. While some cheminformatics
 projects still share source code as source distributions, the adoption of
 source code repositories has emerged as the golden standard. There are various 
-open source repository technologies around, including Concurrent Versions System (CVS),
-Subversion (SVN), Mercurial, Bazaar, and Git. CVS is the oldest and mostly replaced
+open source repository technologies available, including the Concurrent Versions System
+(CVS)~\cite{url:cvs}, Subversion (SVN)~\cite{url:svn}, Mercurial~\cite{url:hg},
+Bazaar~\cite{url:bazaar}, and Git~\cite{url:git}. CVS is the oldest and mostly replaced
 by the newer technologies. Subversion is still abundant, but increasingly
 replaced by the last three technologies. The reason for this is that
 those three are distributed technologies, allowing for server redundancy.
